@@ -76,10 +76,8 @@ html {
 
 .welcome {
   height: 600px;
-  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%), url("../img/Welcome.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%) top / auto 50% no-repeat,
+  url("../img/Welcome.jpg") center center / cover no-repeat;
 }
 
 .section-welcome {
