@@ -18,16 +18,16 @@
       <nav class="navigation">
         <ul class="navigation__links">
           <li><a class="navigation__item" href="#about">About</a></li>
-          <li><a class="navigation__item" href="#">Favorites</a></li>
+          <li><a class="navigation__item" href="#favorites">Favorites</a></li>
           <li><a class="navigation__item" href="#">Coffee shop</a></li>
           <li><a class="navigation__item" href="#">Contacts</a></li>
           <li><a class="navigation__item" href="#">Library Card</a></li>
         </ul>
       </nav>
       <a href="">
-      <svg class="profile-icon" width="28px" height="28px">
-        <use href="assets/svg/icons.svg#icon-profile"></use>
-      </svg>
+        <svg class="profile-icon" width="28px" height="28px">
+          <use href="assets/svg/icons.svg#icon-profile"></use>
+        </svg>
       </a>
     </div>
   </header>
@@ -40,7 +40,7 @@
     </section>
   </div>
 
-  <section class="section about" id="about">
+  <section class="section section-about" id="about">
     <h2 class="section__title">About</h2>
     <hr class="section__title-underline">
     <p class="section__description">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee
@@ -49,13 +49,32 @@
       <img class="carousel__photo" src="assets/img/about-img/image1.png" alt="Woman in the library">
       <img class="carousel__photo" src="assets/img/about-img/image2.png" alt="Stone bust sculptures">
       <img class="carousel__photo" src="assets/img/about-img/image3.png" alt="Library">
-<!--      <img class="carousel__photo" src="assets/img/about-img/image4.png" alt="Library">-->
-<!--      <img class="carousel__photo" src="assets/img/about-img/image5.png" alt="Arc with columns">-->
+      <!--      <img class="carousel__photo" src="assets/img/about-img/image4.png" alt="Library">-->
+      <!--      <img class="carousel__photo" src="assets/img/about-img/image5.png" alt="Arc with columns">-->
     </div>
     <div class="carousel-pagination">
       <div class="carousel-pagination__button carousel-pagination__button-active"></div>
       <div class="carousel-pagination__button"></div>
       <div class="carousel-pagination__button"></div>
+    </div>
+  </section>
+
+  <section class="section section-favorites" id="favorites">
+    <h2 class="section__title">Favorites</h2>
+    <hr class="section__title-underline">
+    <p class="section-favorites__description">Pick favorites of season</p>
+    <div class="favorites-menu">
+      <input class="favorites-menu__item" type="radio" id="winter" name="fav-season" value="winter" checked>
+        <label class="favorites-menu__item-label" for="winter">Winter</label>
+
+      <input class="favorites-menu__item" type="radio" id="spring" name="fav-season" value="spring">
+        <label class="favorites-menu__item-label" for="spring">Spring</label>
+
+      <input class="favorites-menu__item" type="radio" id="summer" name="fav-season" value="summer">
+        <label class="favorites-menu__item-label" for="summer">Summer</label>
+
+      <input class="favorites-menu__item" type="radio" id="autumn" name="fav-season" value="autumn">
+        <label class="favorites-menu__item-label" for="autumn">Autumn</label>
     </div>
   </section>
 </main>
