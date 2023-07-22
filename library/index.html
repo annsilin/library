@@ -21,12 +21,12 @@
           <li><a class="navigation__item" href="#about">About</a></li>
           <li><a class="navigation__item" href="#favorites">Favorites</a></li>
           <li><a class="navigation__item" href="#coffee">Coffee shop</a></li>
-          <li><a class="navigation__item" href="#">Contacts</a></li>
-          <li><a class="navigation__item" href="#">Library Card</a></li>
+          <li><a class="navigation__item" href="#contacts">Contacts</a></li>
+          <li><a class="navigation__item" href="#library-card">Library Card</a></li>
         </ul>
       </nav>
-      <a href="">
-        <svg class="profile-icon" width="28px" height="28px">
+      <a href="" target="_blank">
+        <svg class="profile-icon icon-link" width="28px" height="28px">
           <use href="assets/svg/icons.svg#icon-profile"></use>
         </svg>
       </a>
@@ -111,7 +111,7 @@
         <hr class="staff-picks__underline">
         <h4 class="book__title">Dante&#58; Poet of the Secular World</h4>
         <h5 class="book__author">By Erich Auerbach</h5>
-        <p class="book__description">Auerbach&#8217;s engaging book places the &#8216;Comedy&#8217; within the tradition
+        <p class="book__description">Auerbach&#39;s engaging book places the &#8216;Comedy&#8217; within the tradition
           of
           epic&#44;
           tragedy&#44;
@@ -153,7 +153,7 @@
         <hr class="staff-picks__underline">
         <h4 class="book__title">Carry&#58; A Memoir of Survival on Stolen Land</h4>
         <h5 class="book__author">By Toni Jenson</h5>
-        <p class="book__description">This memoir about the author&#8217;s relationship with gun violence feels both
+        <p class="book__description">This memoir about the author&#39;s relationship with gun violence feels both
           expansive
           and intimate&#44; resulting in a lyrical indictment of the way things are&#46;</p>
         <button class="button-buy">Buy</button>
@@ -251,7 +251,7 @@
         <hr class="staff-picks__underline">
         <h4 class="book__title">Casual Conversation</h4>
         <h5 class="book__author">By Renia White</h5>
-        <p class="book__description">White&#8217;s impressive debut collection takes readers through and beyond the
+        <p class="book__description">White&#39;s impressive debut collection takes readers through and beyond the
           concepts of conversation and the casual - both what we say to each other and what we don't&#44; examining the
           possibilities around how we construct and communicate identity&#46;</p>
         <button class="button-buy">Buy</button>
@@ -276,9 +276,9 @@
         <hr class="staff-picks__underline">
         <h4 class="book__title">Rickey&#58; The Life and Legend</h4>
         <h5 class="book__author">By Howard Bryant</h5>
-        <p class="book__description">With the fall rolling around&#44; one can&#8217;t help but think of baseball&#8217;s
+        <p class="book__description">With the fall rolling around&#44; one can&#39;t help but think of baseball&#39;s
           postseason
-          coming up! And what better way to prepare for it than reading the biography of one of the game&#8217;s
+          coming up! And what better way to prepare for it than reading the biography of one of the game&#39;s
           all-time
           greatest performers&#44; the Man of Steal&#44; Rickey Henderson?</p>
         <button class="button-buy">Buy</button>
@@ -369,7 +369,7 @@
             <span class="menu-item-price">&#36;18</span>
           </li>
           <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Poet&#8217;s Dream Cake</span>
+            <span class="menu-item-title-dessert">Poet&#39;s Dream Cake</span>
             <span class="menu-item-line"></span>
             <span class="menu-item-price">&#36;16</span>
           </li>
@@ -383,7 +383,7 @@
     </div>
   </section>
 
-  <section class="section section-contacts">
+  <section class="section section-contacts" id="contacts">
     <h2 class="section__title">Our Contacts</h2>
     <hr class="section__title-underline">
     <div class="section-contacts-wrapper">
@@ -403,7 +403,7 @@
     </div>
   </section>
 
-  <section class="section section-library-card">
+  <section class="section section-library-card" id="library-card">
     <h2 class="section__title">Digital Library Cards</h2>
     <hr class="section__title-underline">
     <div class="cards-wrapper">
@@ -433,6 +433,43 @@
     </div>
   </section>
 </main>
-
+<footer class="footer container">
+  <div class="footer-wrapper">
+  <div class="footer-contacts-wrapper">
+    <div class="footer-contacts">
+      <p class="address"><a class="footer-link" href="https://goo.gl/maps/89vQ8Y5qs4DkFxkM7" target="_blank">286 Cadman Plaza, New York,<br> NY 11238, United States</a></p>
+      <div class="social">
+        <a class="footer-link" href="https://www.twitter.com/bklynlibrary" target="_blank">
+          <svg class="social-icon icon-link" width="24px" height="24px">
+            <use href="assets/svg/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+        <a class="footer-link" href="https://www.instagram.com/bklynlibrary" target="_blank">
+          <svg class="social-icon icon-link" width="24px" height="24px">
+            <use href="assets/svg/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a class="footer-link" href="https://www.facebook.com/BrooklynPublicLibrary/" target="_blank">
+          <svg class="social-icon icon-link" width="24px" height="24px">
+            <use href="assets/svg/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-schedule">
+      <p class="schedule">Mon - Fri<br>
+        08&#58;00 am - 07&#58;00 pm</p>
+      <p class="schedule">Sat - Sun<br>
+        10&#58;00 am - 06&#58;00 pm</p>
+    </div>
+  </div>
+  <hr class="footer-line">
+  <div class="footer-credits-wrapper">
+    <span class="credits-content">2023</span>
+    <span class="credits-content"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a></span>
+    <span class="credits-content nickname"><a class="footer-link" href="https://github.com/annsilin" target="_blank">annsilin</a></span>
+  </div>
+  </div>
+</footer>
 </body>
 </html>
