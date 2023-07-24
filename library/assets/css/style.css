@@ -245,7 +245,8 @@ html {
 
 .favorites-menu__item-label {
   position: relative;
-  margin-right: 90px;
+  width: 120px;
+  margin-right: 37px;
   color: #000;
   font-family: Inter, sans-serif;
   font-size: 20px;
@@ -253,6 +254,18 @@ html {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+}
+
+.favorites-menu__item-label:nth-of-type(2) {
+  margin-right: 32px;
+}
+
+.favorites-menu__item-label:nth-of-type(3) {
+  margin-right: 50px;
+}
+
+.favorites-menu__item-label:last-of-type {
+  margin-right: 0;
 }
 
 .favorites-menu__item:checked + .favorites-menu__item-label {
@@ -761,7 +774,7 @@ html {
 
 .footer-wrapper {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 2px auto 0 auto;
   padding: 20px 20px 44px 20px;
 }
 
@@ -784,7 +797,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 18px;
-
 }
 
 .schedule {
@@ -820,6 +832,11 @@ html {
   letter-spacing: 2px;
 }
 
+.credits-content-year {
+  min-width: 91px;
+  text-align: left;
+}
+
 .footer-credits-wrapper {
   display: flex;
   justify-content: space-between;
@@ -827,8 +844,8 @@ html {
 
 .footer-line {
   color: #FFFFFF;
-  margin-top: 30px;
-  margin-bottom: 44px;
+  margin-top: 28px;
+  margin-bottom: 46px;
 }
 
 .footer-link {
