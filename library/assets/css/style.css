@@ -201,10 +201,18 @@ html {
   height: 16px;
   border-radius: 50%;
   background-color: #0C0C0E;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-pagination__button:hover::before,
+.carousel-pagination__button:hover::after {
+  background-color: #E4CAA7;
 }
 
 .carousel-pagination__button-active::before,
-.carousel-pagination__button-active::after {
+.carousel-pagination__button-active::after,
+.carousel-pagination__button-active:hover::before,
+.carousel-pagination__button-active:hover::after {
   background-color: #BB945F;
 }
 
@@ -223,6 +231,7 @@ html {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
+  /*gap: 90px;*/
 }
 
 .favorites-menu__item {
@@ -266,6 +275,13 @@ html {
   row-gap: 40px;
   justify-content: space-between;
   /*column-gap: 220px;*/
+}
+
+@media (max-width: 768px) {
+  .books {
+    grid-template-columns: 590px;
+    justify-content: center;
+  }
 }
 
 .book {
@@ -416,7 +432,14 @@ html {
   display: grid;
   grid-template-columns: auto auto;
   justify-content:space-between;
+}
 
+@media (max-width: 768px) {
+  .coffee-shop-menu-wrapper {
+    grid-template-columns: auto;
+    row-gap: 40px;
+    justify-content: stretch;
+  }
 }
 
 .coffee-shop-menu {
@@ -568,6 +591,13 @@ html {
   justify-content:space-between;
 }
 
+@media (max-width: 768px) {
+  .section-contacts-wrapper {
+    grid-template-columns: auto;
+    row-gap: 100px;
+  }
+}
+
 .card-subtitle {
   color: #000;
   font-family: Inter, sans-serif;
@@ -712,6 +742,21 @@ html {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: auto;
+    row-gap: 21px;
+    justify-content: center;
+  }
+  .get-card-wrapper {
+    align-items: center;
+    width: 600px;
+  }
+  .get-card-description {
+    text-align: center;
+  }
 }
 
 .footer-wrapper {
