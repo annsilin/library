@@ -413,9 +413,10 @@
           <div class="card-input-wrapper">
             <span class="card-name">Brooklyn Public Library</span>
             <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
-                                             placeholder="Reader&#39;s name"></label>
+                                             placeholder="Reader&#39;s name" required
+                                             pattern="^[a-zA-Z0-9\-\s]+$"></label>
             <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
-                                            placeholder="Card number"></label>
+                                            placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$"></label>
           </div>
           <button class="button-card button" type="submit">Check the card</button>
         </form>
@@ -435,41 +436,50 @@
 </main>
 <footer class="footer container">
   <div class="footer-wrapper">
-  <div class="footer-contacts-wrapper">
-    <div class="footer-contacts">
-      <p class="address"><a class="footer-link" href="https://goo.gl/maps/89vQ8Y5qs4DkFxkM7" target="_blank">286 Cadman Plaza, New York,<br> NY 11238, United States</a></p>
-      <div class="social">
-        <a class="footer-link" href="https://www.twitter.com/bklynlibrary" target="_blank">
-          <svg class="social-icon icon-link" width="24px" height="24px">
-            <use href="assets/svg/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-        <a class="footer-link" href="https://www.instagram.com/bklynlibrary" target="_blank">
-          <svg class="social-icon icon-link" width="24px" height="24px">
-            <use href="assets/svg/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        <a class="footer-link" href="https://www.facebook.com/BrooklynPublicLibrary/" target="_blank">
-          <svg class="social-icon icon-link" width="24px" height="24px">
-            <use href="assets/svg/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
+    <div class="footer-contacts-wrapper">
+      <div class="footer-contacts">
+        <p class="address"><a class="footer-link" href="https://goo.gl/maps/89vQ8Y5qs4DkFxkM7" target="_blank">286
+          Cadman Plaza, New York,<br> NY 11238, United States</a></p>
+        <ul class="social">
+          <li>
+            <a class="footer-link" href="https://www.twitter.com/bklynlibrary" target="_blank">
+              <svg class="social-icon icon-link" width="24px" height="24px">
+                <use href="assets/svg/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.instagram.com/bklynlibrary" target="_blank">
+              <svg class="social-icon icon-link" width="24px" height="24px">
+                <use href="assets/svg/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.facebook.com/BrooklynPublicLibrary/" target="_blank">
+              <svg class="social-icon icon-link" width="24px" height="24px">
+                <use href="assets/svg/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-schedule">
+        <p class="schedule">Mon - Fri<br>
+          08&#58;00 am - 07&#58;00 pm</p>
+        <p class="schedule">Sat - Sun<br>
+          10&#58;00 am - 06&#58;00 pm</p>
       </div>
     </div>
-    <div class="footer-schedule">
-      <p class="schedule">Mon - Fri<br>
-        08&#58;00 am - 07&#58;00 pm</p>
-      <p class="schedule">Sat - Sun<br>
-        10&#58;00 am - 06&#58;00 pm</p>
+    <hr class="footer-line">
+    <div class="footer-credits-wrapper">
+      <span class="credits-content credits-content-year">2023</span>
+      <span class="credits-content"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a></span>
+      <span class="credits-content credits-content-nickname"><a class="footer-link" href="https://github.com/annsilin"
+                                                                target="_blank">annsilin</a></span>
     </div>
   </div>
-  <hr class="footer-line">
-  <div class="footer-credits-wrapper">
-    <span class="credits-content credits-content-year">2023</span>
-    <span class="credits-content"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a></span>
-    <span class="credits-content credits-content-nickname"><a class="footer-link" href="https://github.com/annsilin" target="_blank">annsilin</a></span>
-  </div>
-  </div>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

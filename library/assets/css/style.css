@@ -444,7 +444,7 @@ html {
   margin-top: 40px;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -601,7 +601,7 @@ html {
   margin-top: 40px;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -656,6 +656,11 @@ html {
   font-weight: 400;
   line-height: 50px; /* 166.667% */
   letter-spacing: 0.6px;
+  transition: outline 0.1s ease-in-out;
+}
+
+.card-input:focus {
+  outline: 2px solid #0C0C0E;
 }
 
 .card-name {
@@ -763,10 +768,12 @@ html {
     row-gap: 21px;
     justify-content: center;
   }
+
   .get-card-wrapper {
     align-items: center;
     width: 600px;
   }
+
   .get-card-description {
     text-align: center;
   }
@@ -791,6 +798,9 @@ html {
 .social {
   display: flex;
   gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 1px;
 }
 
 .footer-contacts {
