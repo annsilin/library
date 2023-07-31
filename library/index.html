@@ -14,9 +14,9 @@
 
 <header class="main-header">
   <h1 class="main-header__title">Brooklyn Public Library</h1>
-  <div class="navigation-menu">
-    <nav class="navigation">
-      <ul class="navigation__links">
+  <div class="navigation-menu" id="navigation-menu">
+    <nav class="navigation" id="navigation">
+      <ul class="navigation__links" id="navigation__links">
         <li><a class="navigation__item" href="#about">About</a></li>
         <li><a class="navigation__item" href="#favorites">Favorites</a></li>
         <li><a class="navigation__item" href="#coffee">Coffee shop</a></li>
@@ -24,11 +24,23 @@
         <li><a class="navigation__item" href="#library-card">Library Card</a></li>
       </ul>
     </nav>
-    <a href="" target="_blank">
-      <svg class="profile-icon icon-link" width="28px" height="28px">
-        <use href="assets/svg/icons.svg#icon-profile"></use>
-      </svg>
-    </a>
+    <div class="navigation-icons" id="navigation-icons">
+      <a href="#">
+        <svg class="profile-icon icon-link" width="28px" height="28px">
+          <use href="assets/svg/icons.svg#icon-profile"></use>
+        </svg>
+      </a>
+      <a class="burger-button" id="burger-button" href="javascript:void(0);" onclick="toggleBurger()">
+        <svg class="burger-icon" width="45px" height="20px">
+          <use href="assets/svg/icons.svg#icon-burger"></use>
+        </svg>
+      </a>
+      <a class="burger-button-close" id="burger-button-close" href="javascript:void(0);" onclick="toggleBurger()">
+        <svg class="burger-icon" width="32px" height="32px">
+          <use href="assets/svg/icons.svg#icon-burger-close"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -477,5 +489,6 @@
 </footer>
 
 <script src="index.js"></script>
+<script src="assets/js/burger.js"></script>
 </body>
 </html>
