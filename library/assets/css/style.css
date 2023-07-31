@@ -32,6 +32,7 @@ html {
   display: flex;
   justify-items: center;
   align-items: center;
+  gap: 40px;
 }
 
 .navigation {
@@ -41,6 +42,7 @@ html {
 
 .navigation__links {
   display: flex;
+  gap: 30px;
   list-style: none;
   color: #ffffff;
   font-family: Inter, sans-serif;
@@ -50,16 +52,11 @@ html {
   line-height: 50px; /* 250% */
 }
 
-.navigation__links li {
-  margin-right: 30px;
-}
-
 .navigation__links li:last-child {
   margin-right: 0;
 }
 
 .profile-icon {
-  margin-left: 40px;
   display: block;
   fill: #FFFFFF;
 }
@@ -283,7 +280,7 @@ html {
   /*column-gap: 220px;*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .books {
     grid-template-columns: 590px;
     justify-content: center;
@@ -440,7 +437,7 @@ html {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .coffee-shop-menu-wrapper {
     grid-template-columns: auto;
     row-gap: 40px;
@@ -597,7 +594,7 @@ html {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section-contacts-wrapper {
     grid-template-columns: auto;
     row-gap: 100px;
@@ -755,7 +752,7 @@ html {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .cards-wrapper {
     grid-template-columns: auto;
     row-gap: 21px;
