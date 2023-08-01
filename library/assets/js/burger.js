@@ -12,3 +12,12 @@ burgerButton.addEventListener("click", () => {
   navigationLinks.classList.toggle("onclick");
 })
 
+document.onclick = (e) => {
+  if (![navigation, navigationMenu, navigationIcons, navigationLinks, burgerButton].includes(e.target)) {
+    burgerButton.classList.remove("onclick");
+    navigation.classList.remove("onclick");
+    navigationMenu.classList.remove("onclick");
+    navigationIcons.classList.remove("onclick");
+    navigationLinks.classList.remove("onclick");
+  }
+}
