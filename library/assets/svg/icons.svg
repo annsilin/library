@@ -30,15 +30,4 @@
       <rect x="1" width="1" height="21" fill="white"/>
     </symbol>
 
-    <symbol id="icon-burger" xmlns="http://www.w3.org/2000/svg" width="45" height="20" viewBox="0 0 45 22" fill="none">
-      <line y1="1" x2="45" y2="1" stroke-width="2"/>
-      <line y1="11" x2="45" y2="11" stroke-width="2"/>
-      <line y1="21" x2="45" y2="21" stroke-width="2"/>
-    </symbol>
-
-    <symbol id="icon-burger-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 36 34" fill="none">
-      <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 0.704103 -0.710098 0.704103 2 2.00003)" stroke-width="2"/>
-      <line y1="-1" x2="45.0642" y2="-1" transform="matrix(0.710098 -0.704103 0.710098 0.704103 2 34)" stroke-width="2"/>
-    </symbol>
-
 </svg>

@@ -30,16 +30,11 @@
           <use href="assets/svg/icons.svg#icon-profile"></use>
         </svg>
       </a>
-      <a class="burger-button" id="burger-button" href="javascript:void(0);" onclick="toggleBurger()">
-        <svg class="burger-icon" width="45px" height="20px">
-          <use href="assets/svg/icons.svg#icon-burger"></use>
-        </svg>
-      </a>
-      <a class="burger-button-close" id="burger-button-close" href="javascript:void(0);" onclick="toggleBurger()">
-        <svg class="burger-icon" width="32px" height="32px">
-          <use href="assets/svg/icons.svg#icon-burger-close"></use>
-        </svg>
-      </a>
+      <div class="burger-button" id="burger-button">
+        <div class="burger-button__bar"></div>
+        <div class="burger-button__bar"></div>
+        <div class="burger-button__bar"></div>
+      </div>
     </div>
   </div>
 </header>
@@ -489,6 +484,6 @@
 </footer>
 
 <script src="index.js"></script>
-<script src="assets/js/burger.js"></script>
+<script defer src="assets/js/burger.js"></script>
 </body>
 </html>

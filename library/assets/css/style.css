@@ -65,18 +65,31 @@ html {
   fill: #FFFFFF;
 }
 
-.burger-icon {
-  stroke: #FFFFFF;
-  transition: stroke 0.3s ease-in-out;
-}
+/*.burger-icon {*/
+/*  stroke: #FFFFFF;*/
+/*  transition: stroke 0.3s ease-in-out;*/
+/*}*/
 
-.burger-icon:hover {
-  cursor: pointer;
-  stroke: #BB945F;
-}
+/*.burger-icon:hover {*/
+/*  cursor: pointer;*/
+/*  stroke: #BB945F;*/
+/*}*/
 
 .burger-button {
   display: none;
+  cursor: pointer;
+}
+
+.burger-button__bar {
+  width: 45px;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: 0.5s ease-out;
+}
+
+.burger-button:hover .burger-button__bar {
+  cursor: pointer;
+  background-color: #BB945F;
 }
 
 .burger-button-close {
@@ -108,24 +121,30 @@ html {
 
 @media (max-width: 1064px) {
   .burger-button {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: 0.5s ease-out;
   }
   .navigation {
     display: none;
   }
-  /*.navigation-menu {*/
-  /*  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
-  /*}*/
-  .burger-button.onclick {
-    display: none;
+
+  .burger-button.onclick .burger-button__bar:nth-child(2) {
+    opacity: 0;
   }
-  .burger-button-close.onclick {
-    display: block;
+  .burger-button.onclick .burger-button__bar:nth-child(1) {
+    transform: translateY(7px) rotate(225deg) translateX(-2.5px);
   }
+  .burger-button.onclick .burger-button__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(135deg) translateX(-2.5px);
+  }
+
   .navigation-menu.onclick {
     width: 332px;
     height: 570px;
     padding: 31px 20px 0 20px;
+    gap: 21px;
     background: #000000;
     flex-direction: column;
     position: absolute;
