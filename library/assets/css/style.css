@@ -125,7 +125,7 @@ html {
     transform: translateY(7px) rotate(225deg) translateX(-2.5px);
   }
   .burger-button.onclick .burger-button__bar:nth-child(3) {
-    transform: translateY(-7px) rotate(135deg) translateX(-2.5px);
+    transform: translateY(-7px) rotate(-225deg) translateX(-2.5px);
   }
 
   .navigation-menu.onclick {
@@ -133,7 +133,7 @@ html {
     height: 570px;
     padding: 31px 20px 0 20px;
     gap: 21px;
-    background: #000000;
+    background: #0C0C0E;
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -227,8 +227,18 @@ html {
   line-height: 40px; /* 200% */
 }
 
-.carousel__photo {
-  margin-right: 21px;
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.carousel__photo:nth-child(4) {
+  display: none;
+}
+
+.carousel__photo:nth-child(5) {
+  display: none;
 }
 
 .carousel__photo:last-child {
@@ -237,9 +247,8 @@ html {
 
 .carousel-pagination {
   display: flex;
-  justify-content: space-between;
-  width: 78px;
-  margin: 31px auto 0 auto;
+  justify-content: center;
+  margin: 36px auto 0 auto;
 }
 
 .carousel-pagination__button {
@@ -249,6 +258,34 @@ html {
   background-color: transparent;
   /*border-radius: 50%;*/
   cursor: pointer;
+}
+
+.carousel-pagination__button:nth-child(4) {
+  display: none;
+}
+
+.carousel-pagination__button:nth-child(5) {
+  display: none;
+}
+
+@media(max-width: 1400px) {
+  .carousel__photo:nth-child(3) {
+    display: none;
+  }
+
+  .carousel-pagination__button:nth-child(4) {
+    display: block;
+  }
+}
+
+@media(max-width: 1024px) {
+  .carousel__photo:nth-child(2) {
+    display: none;
+  }
+
+  .carousel-pagination__button:nth-child(5) {
+    display: block;
+  }
 }
 
 .carousel-pagination__button::before,
@@ -350,7 +387,7 @@ html {
   /*column-gap: 220px;*/
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .books {
     grid-template-columns: 590px;
     justify-content: center;
@@ -655,6 +692,7 @@ html {
 
 .section-contacts__map {
   display: block;
+  width: 100%;
 }
 
 .section-contacts-wrapper {
@@ -668,6 +706,12 @@ html {
   .section-contacts-wrapper {
     grid-template-columns: auto;
     row-gap: 100px;
+    justify-content: stretch;
+  }
+
+  .section-contacts__map {
+    justify-self: center;
+    width: 95%;
   }
 }
 
@@ -822,7 +866,7 @@ html {
   justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .cards-wrapper {
     grid-template-columns: auto;
     row-gap: 21px;
