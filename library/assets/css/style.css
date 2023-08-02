@@ -11,7 +11,8 @@ html {
   margin: 0 auto;
   height: 90px;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+  /*justify-content: space-between;*/
   justify-items: center;
   padding: 0 20px 0 20px;
   background: #0C0C0E;
@@ -19,6 +20,7 @@ html {
 }
 
 .main-header__title {
+  margin-right: auto;
   color: #ffffff;
   font-family: Forum, serif;
   font-size: 30px;
@@ -28,16 +30,18 @@ html {
   letter-spacing: 0.6px;
 }
 
-.navigation-menu {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 40px;
-}
+/*.navigation-menu {*/
+/*  justify-self: flex-end;*/
+/*  display: flex;*/
+/*  justify-items: center;*/
+/*  align-items: center;*/
+/*  gap: 40px;*/
+/*}*/
 
 .navigation {
-  display: flex;
-  justify-items: center;
+  /*justify-self: flex-end;*/
+  /*display: flex;*/
+  /*justify-items: center;*/
 }
 
 .navigation__links {
@@ -112,12 +116,32 @@ html {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    transition: 0.5s ease-out;
-  }
-  .navigation {
-    display: none;
+    transition: 0.5s;
   }
 
+  .navigation-icons {
+    width: 225px;
+    justify-content: flex-end;
+    background-color: #0C0C0E;
+    position: relative;
+    z-index: 2;
+  }
+
+  .navigation {
+    width: 332px;
+    height: 480px;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .navigation__links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
   .burger-button.onclick .burger-button__bar:nth-child(2) {
     opacity: 0;
   }
@@ -128,26 +152,14 @@ html {
     transform: translateY(-7px) rotate(-225deg) translateX(-2.5px);
   }
 
-  .navigation-menu.onclick {
-    width: 332px;
-    height: 570px;
-    padding: 31px 20px 0 20px;
-    gap: 21px;
+  .navigation.onclick {
+    padding: 0 20px 0 20px;
     background: #0C0C0E;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
+    top: 90px;
     right: 0;
     z-index: 1;
   }
-  .navigation.onclick {
-    display: block;
-    order: 2;
-  }
-  .navigation-icons.onclick {
-    order: 1;
-    align-self: flex-end;
-  }
+
   .navigation__links.onclick {
     flex-direction: column;
     justify-content: center;
