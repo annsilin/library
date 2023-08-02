@@ -281,6 +281,10 @@ html {
 }
 
 @media(max-width: 1400px) {
+  .carousel-pagination {
+    margin-top: 21px;
+  }
+
   .carousel__photo:nth-child(3) {
     display: none;
   }
@@ -723,7 +727,7 @@ html {
 
   .section-contacts__map {
     justify-self: center;
-    width: 95%;
+    width: 95.5%;
   }
 }
 
@@ -890,6 +894,7 @@ html {
   .get-card-wrapper {
     align-items: center;
     width: 600px;
+    gap: 40px;
   }
 
   .get-card-description {
