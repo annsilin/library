@@ -245,6 +245,26 @@ html {
   gap: 25px;
 }
 
+.carousel-arrows-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+}
+
+.carousel-arrow {
+  box-sizing: unset;
+  padding: 20px;
+  margin-top: 40px;
+  stroke: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-arrow:hover {
+  cursor: pointer;
+  stroke: #BB945F;
+}
+
 .carousel__photo:nth-child(4) {
   display: none;
 }
@@ -295,6 +315,10 @@ html {
 }
 
 @media(max-width: 1024px) {
+  .carousel-arrow {
+    display: block;
+  }
+
   .carousel__photo:nth-child(2) {
     display: none;
   }
@@ -379,6 +403,18 @@ html {
 
 .favorites-menu__item-label:last-of-type {
   margin-right: 0;
+}
+
+@media(max-width: 768px) {
+  .favorites-menu__item-label:nth-of-type(1) {
+    margin-right: 56px;
+  }
+  .favorites-menu__item-label:nth-of-type(2) {
+    margin-right: 51px;
+  }
+  .favorites-menu__item-label:nth-of-type(3) {
+    margin-right: 67px;
+  }
 }
 
 .favorites-menu__item:checked + .favorites-menu__item-label {
@@ -967,8 +1003,14 @@ html {
 }
 
 .credits-content-year {
-  min-width: 91px;
+  max-width: 91px;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .credits-content-year {
+    max-width: 33px;
+  }
 }
 
 .footer-credits-wrapper {
