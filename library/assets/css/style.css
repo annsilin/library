@@ -85,7 +85,6 @@ html {
 
 .burger-button:hover .burger-button__bar {
   cursor: pointer;
-  background-color: #BB945F;
 }
 
 .navigation__item {
