@@ -309,6 +309,9 @@ html {
 }
 
 @media(max-width: 1400px) {
+  .carousel-arrow {
+    display: none;
+  }
 
   .carousel__photo:nth-child(3) {
     display: none;
