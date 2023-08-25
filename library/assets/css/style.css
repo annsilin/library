@@ -1054,3 +1054,43 @@ html {
   cursor: pointer;
   fill: #BB945F;
 }
+
+.drop-menu-profile {
+  width: 80px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+
+.drop-menu-profile-card-number {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.drop-menu-profile-line {
+  width: 40px;
+  height: 1px;
+  margin-bottom: 15px;
+  background: #BB945F;
+}
+
+.drop-menu-profile-btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.drop-menu-profile-btn:first-of-type {
+  margin-bottom: 10px;
+}
