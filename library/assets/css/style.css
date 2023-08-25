@@ -1094,3 +1094,182 @@ html {
 .drop-menu-profile-btn:first-of-type {
   margin-bottom: 10px;
 }
+
+.modal-profile {
+  width: 600px;
+  /*border: solid black 1px;*/
+  display: flex;
+  gap: 20px;
+}
+
+.modal-profile_user {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #0C0C0E;
+}
+
+.modal-profile_user-pic {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #BB945F;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: capitalize;
+}
+
+.modal-profile_user-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 15px 5px 15px;
+  background-color: #FFFFFF;
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.modal-profile-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #000000;
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 50% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.modal-profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-profile_info-cards {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+}
+
+.modal-profile_info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-profile_info-card-counter {
+  font-size: 10px;
+  letter-spacing: 0.2px;
+}
+
+.modal-profile_info-books-title {
+  margin-bottom: 30px;
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 80% */
+}
+
+.modal-profile_info-books {
+  width: 352px;
+  height: 70px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.modal-profile_info-books-list {
+  margin: 0;
+  padding-left: 30px;
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.modal-profile_info-books-list-item {
+  margin-bottom: 10px;
+}
+
+.modal-profile_info-books-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.modal-profile_info-library-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 39px;
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+}
+
+.modal-profile_info-library-card-number {
+  color: #BB945F;
+}
+
+.btn-close {
+  stroke: #0C0C0E;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+  stroke: #BB945F;
+}
+
+.modal-profile .btn-close {
+  margin-top: 23px;
+}
+
+.btn-copy {
+  stroke: #000000;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.btn-copy:hover {
+  cursor: pointer;
+  stroke: #BB945F;
+}
