@@ -527,8 +527,7 @@ html {
   text-transform: capitalize;
 }
 
-.button-buy {
-  margin-top: auto;
+.button {
   width: 75px;
   height: 30px;
   flex-shrink: 0;
@@ -537,13 +536,17 @@ html {
   border: 1px solid #0C0C0E;
   color: #0C0C0E;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
   font-family: Inter, sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  transition: background-color 0.3s ease-in-out;
+}
+
+.button-buy {
+  margin-top: auto;
 }
 
 .button:hover {
@@ -574,7 +577,6 @@ html {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .book__cover {
@@ -890,23 +892,6 @@ html {
   font-weight: 400;
   line-height: 40px; /* 200% */
   letter-spacing: 0.4px;
-}
-
-.button-get-card {
-  width: 75px;
-  height: 30px;
-  background-color: #FFFFFF;
-  color: #0C0C0E;
-  border-radius: 2px;
-  border: 1px solid #0C0C0E;
-  text-align: center;
-  font-family: Inter, sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .get-card-wrapper {
@@ -1272,4 +1257,124 @@ html {
 .btn-copy:hover {
   cursor: pointer;
   stroke: #BB945F;
+}
+
+.modal-form {
+  width: 250px;
+  padding: 0 25px 10px 25px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 133.333% */
+  letter-spacing: 0.3px;
+}
+
+.modal-register-login {
+  padding-bottom: 20px;
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-register-login .button {
+  margin-top: 10px;
+}
+
+.modal-register .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-register-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.modal-form input {
+  width: 200px;
+  border: 1px solid #BB945F;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-form input:focus {
+  outline: #BB945F solid 1px;
+}
+
+.validation {
+  display: none;
+  color: red;
+  text-align: left;
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+.input-field.error .validation {
+  display: block;
+}
+
+.input-field.error input {
+  border: 1px solid red;
+}
+
+.modal-register-login-alt {
+  display: flex;
+  gap: 10px;
+  margin-left: 25px;
+}
+
+.modal-register-login-alt__text {
+  color: #000000;
+  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.16);
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal-register-login-alt__btn {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-register-login-alt__btn:hover {
+  cursor: pointer;
+  color: #BB945F;
 }
