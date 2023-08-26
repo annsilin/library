@@ -1087,7 +1087,7 @@ html {
   gap: 20px;
 }
 
-.modal-profile_user {
+.modal-profile__user {
   width: 170px;
   display: flex;
   flex-direction: column;
@@ -1097,7 +1097,7 @@ html {
   background-color: #0C0C0E;
 }
 
-.modal-profile_user-pic {
+.modal-profile__user-pic {
   width: 80px;
   height: 80px;
   display: flex;
@@ -1114,7 +1114,7 @@ html {
   text-transform: capitalize;
 }
 
-.modal-profile_user-name {
+.modal-profile__user-name {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1145,13 +1145,13 @@ html {
   text-transform: uppercase;
 }
 
-.modal-profile_info {
+.modal-profile__info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.modal-profile_info-cards {
+.modal-profile__info-cards {
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
@@ -1166,19 +1166,19 @@ html {
   text-transform: capitalize;
 }
 
-.modal-profile_info-card {
+.modal-profile__info-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.modal-profile_info-card-counter {
+.modal-profile__info-card-counter {
   font-size: 10px;
   letter-spacing: 0.2px;
 }
 
-.modal-profile_info-books-title {
+.modal-profile__info-books-title {
   margin-bottom: 30px;
   color: #0C0C0E;
   text-align: center;
@@ -1189,14 +1189,14 @@ html {
   line-height: 20px; /* 80% */
 }
 
-.modal-profile_info-books {
+.modal-profile__info-books {
   width: 352px;
   height: 70px;
   margin-bottom: 20px;
   overflow: auto;
 }
 
-.modal-profile_info-books-list {
+.modal-profile__info-books-list {
   margin: 0;
   padding-left: 30px;
   color: #000000;
@@ -1209,15 +1209,15 @@ html {
   text-transform: capitalize;
 }
 
-.modal-profile_info-books-list-item {
+.modal-profile__info-books-list-item {
   margin-bottom: 10px;
 }
 
-.modal-profile_info-books-list-item:last-of-type {
+.modal-profile__info-books-list-item:last-of-type {
   margin-bottom: 0;
 }
 
-.modal-profile_info-library-card {
+.modal-profile__info-library-card {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -1231,7 +1231,7 @@ html {
   line-height: 20px; /* 100% */
 }
 
-.modal-profile_info-library-card-number {
+.modal-profile__info-library-card-number {
   color: #BB945F;
 }
 
