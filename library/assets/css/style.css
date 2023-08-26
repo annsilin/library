@@ -1288,13 +1288,13 @@ html {
   margin-top: 10px;
 }
 
-.modal-register .btn-close {
+.modal-register-login .btn-close {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.modal-register-title {
+.modal-register-login__title {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #000;
