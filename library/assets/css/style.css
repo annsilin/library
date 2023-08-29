@@ -1071,13 +1071,31 @@ html {
 }
 
 .drop-menu-profile-btn {
+  position: relative;
   padding: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .drop-menu-profile-btn:first-of-type {
   margin-bottom: 10px;
+}
+
+.drop-menu-profile-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #BB945F;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.drop-menu-profile-btn:hover::after {
+  transform: scaleX(1);
 }
 
 .modal-profile {
@@ -1085,6 +1103,9 @@ html {
   /*border: solid black 1px;*/
   display: flex;
   gap: 20px;
+  z-index: 4;
+  position: relative;
+  background-color: #FFFFFF;
 }
 
 .modal-profile__user {
@@ -1282,6 +1303,8 @@ html {
   width: 250px;
   display: flex;
   flex-direction: column;
+  z-index: 4;
+  background-color: #FFFFFF;
 }
 
 .modal-register-login .button {
@@ -1377,4 +1400,16 @@ html {
 .modal-register-login-alt__btn:hover {
   cursor: pointer;
   color: #BB945F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
