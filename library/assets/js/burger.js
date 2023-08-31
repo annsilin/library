@@ -2,8 +2,8 @@ let burgerButton = document.getElementById("burger-button");
 let navigation = document.getElementById("navigation");
 let navigationLinks = document.getElementById("navigation__links");
 
-burgerButton.addEventListener("click", () => {
-  event.stopPropagation();
+burgerButton.addEventListener("click", (e) => {
+  e.stopPropagation();
   burgerButton.classList.toggle("onclick");
   navigation.classList.toggle("onclick");
   navigationLinks.classList.toggle("onclick");

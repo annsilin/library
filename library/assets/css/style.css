@@ -1099,12 +1099,18 @@ html {
 }
 
 .modal-profile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
   width: 600px;
   /*border: solid black 1px;*/
   display: flex;
   gap: 20px;
   z-index: 4;
-  position: relative;
   background-color: #FFFFFF;
 }
 
@@ -1257,11 +1263,20 @@ html {
 }
 
 .btn-close {
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.icon-close {
   stroke: #0C0C0E;
   transition: stroke 0.3s ease-in-out;
 }
 
-.btn-close:hover {
+.icon-close:hover {
   cursor: pointer;
   stroke: #BB945F;
 }
@@ -1299,8 +1314,14 @@ html {
 
 .modal-register-login {
   padding-bottom: 20px;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   width: 250px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -1413,3 +1434,8 @@ html {
   background: rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
+
+.hidden {
+  display: none;
+}
+
