@@ -58,6 +58,7 @@ html {
 }
 
 .navigation-icons {
+  position: relative;
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -1058,6 +1059,26 @@ html {
   line-height: 20px; /* 133.333% */
 }
 
+.drop-menu-profile-no-auth {
+  position: absolute;
+  top: 59px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1064px) {
+  .drop-menu-profile-no-auth {
+    right: 85px;
+  }
+}
+
+.drop-menu-profile-active {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
 .drop-menu-profile-card-number {
   margin-bottom: 5px;
   font-weight: 700;
@@ -1262,7 +1283,7 @@ html {
   color: #BB945F;
 }
 
-.btn-close {
+.btn-close, .btn-profile {
   height: fit-content;
   width: fit-content;
   background-color: transparent;

@@ -26,11 +26,17 @@
   </nav>
 
   <div class="navigation-icons" id="navigation-icons">
-    <a href="#">
+    <button class="btn-profile">
       <svg class="profile-icon icon-link" width="28px" height="28px">
         <use href="assets/svg/icons.svg#icon-profile"></use>
       </svg>
-    </a>
+    </button>
+    <div class="drop-menu-profile drop-menu-profile-no-auth" id="drop-menu-profile-no-auth">
+      <span class="drop-menu-profile-card-number">Profile</span>
+      <span class="drop-menu-profile-line"></span>
+      <button class="drop-menu-profile-btn drop-menu-profile-login-btn log-in">Log In</button>
+      <button class="drop-menu-profile-btn drop-menu-profile-register-btn sign-up">Register</button>
+    </div>
     <div class="burger-button" id="burger-button">
       <div class="burger-button__bar"></div>
       <div class="burger-button__bar"></div>
@@ -493,19 +499,12 @@
   </div>
 </footer>
 
-<div class="drop-menu-profile drop-menu-profile-auth">
-  <span class="drop-menu-profile-card-number">Profile</span>
-  <span class="drop-menu-profile-line"></span>
-  <button class="drop-menu-profile-btn drop-menu-profile-myprofile-btn my-profile">My profile</button>
-  <button class="drop-menu-profile-btn drop-menu-profile-logout-btn log-out">Log Out</button>
-</div>
-
-<div class="drop-menu-profile drop-menu-profile-no-auth">
-  <span class="drop-menu-profile-card-number">Profile</span>
-  <span class="drop-menu-profile-line"></span>
-  <button class="drop-menu-profile-btn drop-menu-profile-login-btn log-in">Log In</button>
-  <button class="drop-menu-profile-btn drop-menu-profile-register-btn sign-up">Register</button>
-</div>
+<!--<div class="drop-menu-profile drop-menu-profile-auth">-->
+<!--  <span class="drop-menu-profile-card-number">Profile</span>-->
+<!--  <span class="drop-menu-profile-line"></span>-->
+<!--  <button class="drop-menu-profile-btn drop-menu-profile-myprofile-btn my-profile">My profile</button>-->
+<!--  <button class="drop-menu-profile-btn drop-menu-profile-logout-btn log-out">Log Out</button>-->
+<!--</div>-->
 
 <div class="overlay hidden"></div>
 
@@ -638,8 +637,10 @@
 </div>
 
 <script src="index.js"></script>
+<script defer src="assets/js/profile-dropdown.js"></script>
 <script defer src="assets/js/burger.js"></script>
 <script defer src="assets/js/registration.js"></script>
 <script defer src="assets/js/modal.js"></script>
+
 </body>
 </html>
