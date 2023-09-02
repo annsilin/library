@@ -446,6 +446,7 @@ html {
   row-gap: 40px;
   justify-content: space-between;
   /*column-gap: 220px;*/
+  transition: all 0.5s linear;
 }
 
 @media (max-width: 1200px) {
@@ -590,9 +591,9 @@ html {
   /*transform: translateX(369px) translateY(-285px);*/
 }
 
-.books-spring,
-.books-summer,
-.books-autumn {
+.books-2,
+.books-3,
+.books-4 {
   display: none;
 }
 
@@ -1065,7 +1066,6 @@ html {
   right: 0;
   z-index: 1;
   display: none;
-  transition: all 0.3s ease;
 }
 
 @media (max-width: 1064px) {
@@ -1076,7 +1076,6 @@ html {
 
 .drop-menu-profile-active {
   display: flex;
-  transition: all 0.3s ease;
 }
 
 .drop-menu-profile-card-number {
@@ -1459,4 +1458,3 @@ html {
 .hidden {
   display: none;
 }
-
