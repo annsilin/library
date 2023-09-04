@@ -1458,3 +1458,107 @@ html {
 .hidden {
   display: none;
 }
+
+.expiration-date {
+  display: flex;
+  gap: 10px;
+}
+
+.expiration-date input, input[id=bank-card-cvc] {
+  width: 45px;
+}
+
+input[id=bank-card-cvc] {
+  margin-bottom: 10px;
+}
+
+label[for=expiration-date-year] {
+  display: none;
+}
+
+.modal-buy-card {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 640px;
+  height: fit-content;
+  background-color: #FFFFFF;
+}
+
+.modal-buy-card__header {
+  padding: 16px 13px 16px 138px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0C0C0E;
+}
+
+.modal-buy-card__header-title {
+ margin: 0;
+}
+
+.modal-buy-card__header .btn-close {
+  margin-top: 5px;
+}
+
+.modal-buy-card__header .icon-close {
+  stroke: #FFFFFF;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.modal-buy-card__header .icon-close:hover {
+  cursor: pointer;
+  stroke: #BB945F;
+}
+
+.modal-buy-card__header-title {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 50% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.modal-buy-card__description {
+  width: 330px;
+  margin: 0;
+  color: #8E8E8E;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 2px;
+}
+
+.modal-buy-card__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 35px 30px 10px;
+}
+
+.modal-buy-card__purchase {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+.modal-buy-card__purchase-price {
+  color: #0C0C0E;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

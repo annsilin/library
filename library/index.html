@@ -424,6 +424,75 @@
   </div>
 </div>
 
+<div class="modal-buy-card hidden">
+  <div class="modal-buy-card__header">
+    <h2 class="modal-buy-card__header-title">Buy a library card</h2>
+    <button class="btn-close">
+      <svg class="icon-close" width="19px" height="19px">
+        <use href="assets/svg/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modal-buy-card__content-wrapper">
+    <form class="modal-form" id="buy-card-form">
+      <div class="input-field">
+        <label for="bank-card-number">Bank card number</label>
+        <input type="text" id="bank-card-number" name="bank-card-number">
+        <small class="validation"></small>
+      </div>
+
+      <div class="input-field">
+        <label for="expiration-date-month">Expiration code</label>
+        <label for="expiration-date-year"></label>
+        <div class="expiration-date">
+          <input type="text" id="expiration-date-month" name="expiration-date-month">
+          <input type="text" id="expiration-date-year" name="expiration-date-year">
+        </div>
+        <small class="validation"></small>
+      </div>
+
+      <div class="input-field">
+        <label for="bank-card-cvc">CVC</label>
+        <input type="text" id="bank-card-cvc" name="bank-card-cvc">
+        <small class="validation"></small>
+      </div>
+
+      <div class="input-field">
+        <label for="cardholder-name">Cardholder name</label>
+        <input type="text" id="cardholder-name" name="cardholder-name">
+        <small class="validation"></small>
+      </div>
+
+      <div class="input-field">
+        <label for="postal-code">Postal code</label>
+        <input type="text" id="postal-code" name="postal-code">
+        <small class="validation"></small>
+      </div>
+
+      <div class="input-field">
+        <label for="city-town">City &#47; Town</label>
+        <input type="text" id="city-town" name="city-town">
+        <small class="validation"></small>
+      </div>
+
+      <div class="modal-buy-card__purchase">
+        <button type="submit" class="button">Buy</button>
+        <span class="modal-buy-card__purchase-price">&#36; 25.00</span>
+      </div>
+
+    </form>
+
+    <p class="modal-buy-card__description">
+      If you are live, work, attend school, or pay property taxes in New York State, you can get a &#36;25 digital
+      library
+      card right now using this online form. Visitors to New York State can also use this form to apply for a temporary
+      card.
+    </p>
+  </div>
+
+</div>
+
 <script src="index.js"></script>
 <script defer src="assets/js/profile-dropdown.js"></script>
 <script defer src="assets/js/burger.js"></script>
