@@ -10,7 +10,7 @@ burgerButton.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (![navigation, navigationLinks, burgerButton].includes(e.target)) {
+  if (![navigation, navigationLinks, burgerButton].includes(e.target) && !burgerButton.contains(e.target)) {
     burgerButton.classList.remove("onclick");
     navigation.classList.remove("onclick");
     navigationLinks.classList.remove("onclick");

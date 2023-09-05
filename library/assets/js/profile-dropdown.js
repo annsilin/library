@@ -7,7 +7,7 @@ profileBtn.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (!profileMenu.contains(e.target)) {
+  if (!profileMenu.contains(e.target) && !profileBtn.contains(e.target)) {
     profileMenu.classList.remove("drop-menu-profile-active");
   }
 }, { capture: true });
