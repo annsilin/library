@@ -6,7 +6,6 @@ const passwordInput = document.getElementById("password-register");
 const loginForm = document.getElementById("login-form");
 const loginUsernameInput = document.getElementById("email-login");
 const loginPasswordInput = document.getElementById("password-login");
-let users = JSON.parse(localStorage.getItem("users")) || [];
 
 registrationForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,6 +27,7 @@ registrationForm.addEventListener("submit", (e) => {
     }
     logoutAllUsers(users);
     addUserToLocalStorage(newUser);
+    closeModal([modalSignUp]);
   }
 });
 
@@ -44,6 +44,7 @@ loginForm.addEventListener("submit", (e) => {
     foundUser.isLoggedIn = true;
     foundUser.visits += 1;
     localStorage.setItem('users', JSON.stringify(users));
+    closeModal([modalSignIn]);
   }
 });
 

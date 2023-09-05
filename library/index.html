@@ -446,15 +446,15 @@
         <label for="expiration-date-month">Expiration code</label>
         <label for="expiration-date-year"></label>
         <div class="expiration-date">
-          <input type="text" id="expiration-date-month" name="expiration-date-month">
-          <input type="text" id="expiration-date-year" name="expiration-date-year">
+          <input type="text" id="expiration-date-month" name="expiration-date-month" maxlength="2">
+          <input type="text" id="expiration-date-year" name="expiration-date-year" maxlength="2">
         </div>
         <small class="validation"></small>
       </div>
 
       <div class="input-field">
         <label for="bank-card-cvc">CVC</label>
-        <input type="text" id="bank-card-cvc" name="bank-card-cvc">
+        <input type="text" id="bank-card-cvc" name="bank-card-cvc" maxlength="3">
         <small class="validation"></small>
       </div>
 
@@ -477,7 +477,7 @@
       </div>
 
       <div class="modal-buy-card__purchase">
-        <button type="submit" class="button">Buy</button>
+        <button type="submit" class="button" disabled>Buy</button>
         <span class="modal-buy-card__purchase-price">&#36; 25.00</span>
       </div>
 
@@ -494,12 +494,14 @@
 </div>
 
 <script src="index.js"></script>
+<script defer src="assets/js/current_user.js"></script>
 <script defer src="assets/js/profile-dropdown.js"></script>
 <script defer src="assets/js/burger.js"></script>
 <script defer src="assets/js/registration.js"></script>
 <script defer src="assets/js/modal.js"></script>
 <script defer src="assets/js/books_data.js"></script>
 <script defer src="assets/js/books_tabs.js"></script>
+<script defer src="assets/js/buy-card.js"></script>
 
 </body>
 </html>

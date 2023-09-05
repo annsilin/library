@@ -551,7 +551,7 @@ html {
   margin-top: auto;
 }
 
-.button:hover {
+.button:hover:enabled {
   border-radius: 2px;
   border: 1px solid #BB945F;
   background: #BB945F;
@@ -1485,6 +1485,7 @@ label[for=expiration-date-year] {
   margin: auto;
   width: 640px;
   height: fit-content;
+  z-index: 4;
   background-color: #FFFFFF;
 }
 
