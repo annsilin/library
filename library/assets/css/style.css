@@ -1082,7 +1082,7 @@ html {
 }
 
 #drop-menu-profile-card-number {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .drop-menu-profile-line {
@@ -1291,6 +1291,24 @@ html {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.btn-profile {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #BB945F;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-profile:hover {
+  cursor: pointer;
+  color: #0C0C0E;
 }
 
 .icon-close {

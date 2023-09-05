@@ -6,6 +6,7 @@ const passwordInput = document.getElementById("password-register");
 const loginForm = document.getElementById("login-form");
 const loginUsernameInput = document.getElementById("email-login");
 const loginPasswordInput = document.getElementById("password-login");
+const logoutBtns = document.querySelectorAll(".log-out");
 
 registrationForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,6 +29,7 @@ registrationForm.addEventListener("submit", (e) => {
     logoutAllUsers(users);
     addUserToLocalStorage(newUser);
     closeModal([modalSignUp]);
+    location.reload();
   }
 });
 
@@ -38,15 +40,26 @@ loginForm.addEventListener("submit", (e) => {
   if (validateLogin(username, password, users)) {
     const foundUser = users.find(user =>
       (user.email && user.email.toLowerCase() === username.toLowerCase() ||
-      user.cardNumber && user.cardNumber.toLowerCase() === username.toLowerCase()) &&
+        user.cardNumber && user.cardNumber.toLowerCase() === username.toLowerCase()) &&
       user.password && user.password === password);
     logoutAllUsers(users);
     foundUser.isLoggedIn = true;
     foundUser.visits += 1;
     localStorage.setItem('users', JSON.stringify(users));
     closeModal([modalSignIn]);
+    location.reload();
   }
 });
+
+logoutBtns.forEach(logoutBtn =>
+  logoutBtn.addEventListener("click", (e) => {
+    if (currentUser) {
+      currentUser.isLoggedIn = false;
+      localStorage.setItem('users', JSON.stringify(users));
+      location.reload();
+    }
+  })
+);
 
 /* Validate user inputs upon entering login credentials */
 const validateLogin = (username, password, users) => {
@@ -58,7 +71,7 @@ const validateLogin = (username, password, users) => {
 
   const credentialsCorrect = username && password ? users.some(user =>
     (user.email && user.email.toLowerCase() === username.toLowerCase() ||
-    user.cardNumber && user.cardNumber.toLowerCase() === username.toLowerCase()) &&
+      user.cardNumber && user.cardNumber.toLowerCase() === username.toLowerCase()) &&
     user.password && user.password === password) : false;
 
   if (!username) {
