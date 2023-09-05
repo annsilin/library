@@ -1243,6 +1243,7 @@ html {
   height: 70px;
   margin-bottom: 20px;
   overflow: auto;
+  white-space: nowrap;
 }
 
 .modal-profile__info-books-list {
