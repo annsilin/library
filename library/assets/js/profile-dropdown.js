@@ -1,5 +1,10 @@
 const profileBtn = document.querySelector(".btn-profile");
-const profileMenu = document.querySelector(".drop-menu-profile-no-auth");
+let profileMenu = document.getElementById("drop-menu-profile-no-auth");
+
+if (currentUser) {
+  profileMenu = document.getElementById("drop-menu-profile-auth");
+  document.getElementById("drop-menu-profile-card-number").innerText = currentUser.cardNumber;
+}
 
 profileBtn.addEventListener("click", (e) => {
   e.stopPropagation();
