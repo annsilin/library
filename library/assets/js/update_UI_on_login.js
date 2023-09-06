@@ -7,6 +7,10 @@ const updateUI = () => {
   // Replace sign up and log in buttons with profile button in 'Get Card' section
   document.querySelector(".get-card-buttons-wrapper").style.display = 'none';
   document.getElementById("profile-btn").style.display = 'block';
+
+  // Display Reader's card with user's info
+  document.querySelector(".card-form").style.display = 'none';
+  changeReadersCard(currentUser);
 };
 
 addEventListener("DOMContentLoaded", () => {

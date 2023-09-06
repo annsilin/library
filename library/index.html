@@ -225,17 +225,50 @@
     <div class="cards-wrapper">
       <div class="card-wrapper">
         <h3 class="card-subtitle">Find your Library card</h3>
-        <form class="card-form" action="#">
+
+        <form class="card-form" id="card-form">
           <div class="card-input-wrapper">
             <span class="card-name">Brooklyn Public Library</span>
             <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
                                              placeholder="Reader&#39;s name" required
                                              pattern="^[a-zA-Z0-9\-\s]+$"></label>
             <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
-                                            placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$"></label>
+                                            placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$" maxlength="9"></label>
           </div>
           <button class="button-card button" type="submit">Check the card</button>
         </form>
+
+        <div class="card-form filled">
+          <div class="card-input-wrapper">
+            <span class="card-name">Brooklyn Public Library</span>
+            <span class="card-input filled name"></span>
+            <span class="card-input filled card"></span>
+          </div>
+          <div class="modal-profile__info-cards">
+            <div class="modal-profile__info-card">
+              <span class="modal-profile__info-card-title">Visits</span>
+              <svg class="" width="20px" height="21px">
+                <use href="assets/svg/icons.svg#icon-visits"></use>
+              </svg>
+              <span class="modal-profile__info-card-counter modal-profile__info-card-visits">0</span>
+            </div>
+            <div class="modal-profile__info-card">
+              <span class="modal-profile__info-card-title">Bonuses</span>
+              <svg class="" width="20px" height="21px">
+                <use href="assets/svg/icons.svg#icon-bonuses"></use>
+              </svg>
+              <span class="modal-profile__info-card-counter modal-profile__info-card-bonuses">1240</span>
+            </div>
+            <div class="modal-profile__info-card">
+              <span class="modal-profile__info-card-title">Books</span>
+              <svg class="" width="20px" height="21px">
+                <use href="assets/svg/icons.svg#icon-books"></use>
+              </svg>
+              <span class="modal-profile__info-card-counter modal-profile__info-card-books">0</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="get-card-wrapper">
@@ -301,10 +334,10 @@
 
 <div class="modal-profile hidden">
   <div class="modal-profile__user">
-    <div class="modal-profile__user-pic">JD</div>
+    <div class="modal-profile__user-pic"></div>
     <div class="modal-profile__user-name">
-      <span class="modal-profile__user-name-first">John</span>
-      <span class="modal-profile__user-name-last">Doe</span>
+      <span class="modal-profile__user-name-first"></span>
+      <span class="modal-profile__user-name-last"></span>
     </div>
   </div>
   <div class="modal-profile__info">
@@ -339,7 +372,7 @@
     </div>
     <div class="modal-profile__info-library-card">
       <span class="modal-profile__info-library-card-title">Card number</span>
-      <span class="modal-profile__info-library-card-number">F00234030</span>
+      <span class="modal-profile__info-library-card-number"></span>
       <svg class="btn-copy" width="13.31px" height="12px">
         <use href="assets/svg/icons.svg#icon-copy"></use>
       </svg>
@@ -505,6 +538,7 @@
 <script defer src="assets/js/books_tabs.js"></script>
 <script defer src="assets/js/buy-card.js"></script>
 <script defer src="assets/js/profile-modal.js"></script>
+<script defer src="assets/js/readers-card.js"></script>
 
 </body>
 </html>
