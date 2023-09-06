@@ -226,49 +226,53 @@
       <div class="card-wrapper">
         <h3 class="card-subtitle">Find your Library card</h3>
 
-        <form class="card-form" id="card-form">
-          <div class="card-input-wrapper">
-            <span class="card-name">Brooklyn Public Library</span>
-            <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
-                                             placeholder="Reader&#39;s name" required
-                                             pattern="^[a-zA-Z0-9\-\s]+$"></label>
-            <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
-                                            placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$" maxlength="9"></label>
-          </div>
-          <button class="button-card button" type="submit">Check the card</button>
-        </form>
+        <div class="card-form-wrapper">
 
-        <div class="card-form filled">
-          <div class="card-input-wrapper">
-            <span class="card-name">Brooklyn Public Library</span>
-            <span class="card-input filled name"></span>
-            <span class="card-input filled card"></span>
+          <form class="card-form" id="card-form">
+            <div class="card-input-wrapper">
+              <span class="card-name">Brooklyn Public Library</span>
+              <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
+                                               placeholder="Reader&#39;s name" required
+                                               pattern="^[a-zA-Z0-9\-\s]+$"></label>
+              <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
+                                              placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$"
+                                              maxlength="9"></label>
+            </div>
+            <button class="button-card button" type="submit">Check the card</button>
+          </form>
+
+          <div class="card-form filled">
+            <div class="card-input-wrapper">
+              <span class="card-name">Brooklyn Public Library</span>
+              <span class="card-input filled name"></span>
+              <span class="card-input filled card"></span>
+            </div>
+            <div class="modal-profile__info-cards">
+              <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Visits</span>
+                <svg class="" width="20px" height="21px">
+                  <use href="assets/svg/icons.svg#icon-visits"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter library-card-visits">0</span>
+              </div>
+              <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Bonuses</span>
+                <svg class="" width="20px" height="21px">
+                  <use href="assets/svg/icons.svg#icon-bonuses"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter library-card-bonuses">1240</span>
+              </div>
+              <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Books</span>
+                <svg class="" width="20px" height="21px">
+                  <use href="assets/svg/icons.svg#icon-books"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter library-card-books">0</span>
+              </div>
+            </div>
           </div>
-          <div class="modal-profile__info-cards">
-            <div class="modal-profile__info-card">
-              <span class="modal-profile__info-card-title">Visits</span>
-              <svg class="" width="20px" height="21px">
-                <use href="assets/svg/icons.svg#icon-visits"></use>
-              </svg>
-              <span class="modal-profile__info-card-counter modal-profile__info-card-visits">0</span>
-            </div>
-            <div class="modal-profile__info-card">
-              <span class="modal-profile__info-card-title">Bonuses</span>
-              <svg class="" width="20px" height="21px">
-                <use href="assets/svg/icons.svg#icon-bonuses"></use>
-              </svg>
-              <span class="modal-profile__info-card-counter modal-profile__info-card-bonuses">1240</span>
-            </div>
-            <div class="modal-profile__info-card">
-              <span class="modal-profile__info-card-title">Books</span>
-              <svg class="" width="20px" height="21px">
-                <use href="assets/svg/icons.svg#icon-books"></use>
-              </svg>
-              <span class="modal-profile__info-card-counter modal-profile__info-card-books">0</span>
-            </div>
-          </div>
+
         </div>
-
       </div>
 
       <div class="get-card-wrapper">

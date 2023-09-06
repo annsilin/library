@@ -9,7 +9,7 @@ const updateUI = () => {
   document.getElementById("profile-btn").style.display = 'block';
 
   // Display Reader's card with user's info
-  document.querySelector(".card-form").style.display = 'none';
+  cardWrapper.classList.toggle('switch');
   changeReadersCard(currentUser);
 };
 
