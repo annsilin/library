@@ -141,18 +141,22 @@ html {
     z-index: 1;
     transition: 0.5s ease-in-out;
   }
+
   .navigation__links {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
   }
+
   .burger-button.onclick .burger-button__bar:nth-child(2) {
     opacity: 0;
   }
+
   .burger-button.onclick .burger-button__bar:nth-child(1) {
     transform: translateY(7px) rotate(225deg) translateX(-3px);
   }
+
   .burger-button.onclick .burger-button__bar:nth-child(3) {
     transform: translateY(-7px) rotate(-225deg) translateX(-3px);
   }
@@ -309,7 +313,7 @@ html {
   display: none;
 }
 
-@media(max-width: 1400px) {
+@media (max-width: 1400px) {
   .carousel-arrow {
     display: none;
   }
@@ -323,7 +327,7 @@ html {
   }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .carousel-arrow {
     display: block;
   }
@@ -363,7 +367,7 @@ html {
 }
 
 .section-favorites__description {
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   color: #000;
   /*text-align: center;*/
   font-family: Inter, sans-serif;
@@ -374,10 +378,20 @@ html {
 }
 
 .favorites-menu {
-  margin-bottom: 40px;
+  height: 44px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   /*gap: 90px;*/
+}
+
+@media (max-width: 1200px) {
+  .favorites-menu {
+    background-color: #FFFFFF;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+  }
 }
 
 .favorites-menu__item {
@@ -414,13 +428,15 @@ html {
   margin-right: 0;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .favorites-menu__item-label:nth-of-type(1) {
     margin-right: 56px;
   }
+
   .favorites-menu__item-label:nth-of-type(2) {
     margin-right: 51px;
   }
+
   .favorites-menu__item-label:nth-of-type(3) {
     margin-right: 67px;
   }
@@ -438,6 +454,24 @@ html {
   bottom: -10px;
   left: -10px;
   right: -10px;
+}
+
+.seasonal-books-visible {
+  animation: fadeIn 0.3s;
+}
+
+.seasonal-books-hidden {
+  animation: fadeOut 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 .books {
@@ -1519,7 +1553,7 @@ label[for=expiration-date-year] {
 }
 
 .modal-buy-card__header-title {
- margin: 0;
+  margin: 0;
 }
 
 .modal-buy-card__header .btn-close {
@@ -1584,3 +1618,4 @@ label[for=expiration-date-year] {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+

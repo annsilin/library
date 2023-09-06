@@ -37,17 +37,19 @@ radioButtons.forEach((radioButton, index) => {
   radioButton.addEventListener("change", () => {
     // Hide all seasons books
     seasonalBooksAll.forEach((seasonalBooks) => {
-      seasonalBooks.style.opacity = "0";
-      seasonalBooks.style.visibility = "hidden";
-      seasonalBooks.style.display = "none";
+      seasonalBooks.classList.add("seasonal-books-hidden");
+      seasonalBooks.classList.remove("seasonal-books-visible");
+      setTimeout(function () {
+        seasonalBooks.style.display = "none";
+      }, 200);
     });
 
     // Show books for the selected season
+    seasonalBooksAll[index].classList.add("seasonal-books-visible");
+    seasonalBooksAll[index].classList.remove("seasonal-books-hidden");
     setTimeout(function () {
-      seasonalBooksAll[index].style.opacity = "1";
-      seasonalBooksAll[index].style.visibility = "visible";
-    }, 30);
-    seasonalBooksAll[index].style.display = "grid";
+      seasonalBooksAll[index].style.display = "grid";
+    }, 200);
   });
 });
 
