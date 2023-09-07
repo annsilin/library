@@ -23,3 +23,7 @@ addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const copyToClipboard = () => {
+  const cardNumber = document.querySelector(".modal-profile__info-library-card-number");
+  navigator.clipboard.writeText(cardNumber.innerText);
+}

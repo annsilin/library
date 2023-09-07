@@ -1439,11 +1439,18 @@ html {
 }
 
 .btn-copy {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-copy {
   stroke: #000000;
   transition: stroke 0.3s ease-in-out;
 }
 
-.btn-copy:hover {
+.icon-copy:hover {
   cursor: pointer;
   stroke: #BB945F;
 }
