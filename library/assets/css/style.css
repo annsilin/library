@@ -248,10 +248,15 @@ html {
   line-height: 40px; /* 200% */
 }
 
+.carousel-visible {
+  overflow: hidden;
+  width: 450px;
+}
+
 .carousel {
   display: flex;
-  justify-content: center;
   gap: 25px;
+  transition: all 0.3s;
 }
 
 .carousel-arrows-wrapper {
@@ -265,25 +270,30 @@ html {
   box-sizing: unset;
   padding: 20px;
   margin-top: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-arrow-icon {
   stroke: #000000;
   transition: 0.3s ease-in-out;
 }
 
-.carousel-arrow:hover {
-  cursor: pointer;
+.carousel-arrow:hover .carousel-arrow-icon {
   stroke: #BB945F;
+}
+
+.carousel-arrow.inactive:hover {
+  cursor: default;
+}
+
+.carousel-arrow.inactive:hover .carousel-arrow-icon {
+  stroke: #000000;
 }
 
 .carousel__photo {
   max-width: 100%;
-}
-
-.carousel__photo:nth-child(4) {
-  display: none;
-}
-
-.carousel__photo:nth-child(5) {
-  display: none;
 }
 
 .carousel__photo:last-child {
@@ -301,44 +311,7 @@ html {
   width: 26px;
   height: 26px;
   background-color: transparent;
-  /*border-radius: 50%;*/
   cursor: pointer;
-}
-
-.carousel-pagination__button:nth-child(4) {
-  display: none;
-}
-
-.carousel-pagination__button:nth-child(5) {
-  display: none;
-}
-
-@media (max-width: 1400px) {
-  .carousel-arrow {
-    display: none;
-  }
-
-  .carousel__photo:nth-child(3) {
-    display: none;
-  }
-
-  .carousel-pagination__button:nth-child(4) {
-    display: block;
-  }
-}
-
-@media (max-width: 1024px) {
-  .carousel-arrow {
-    display: block;
-  }
-
-  .carousel__photo:nth-child(2) {
-    display: none;
-  }
-
-  .carousel-pagination__button:nth-child(5) {
-    display: block;
-  }
 }
 
 .carousel-pagination__button::before,
@@ -359,10 +332,15 @@ html {
   background-color: #E4CAA7;
 }
 
+.carousel-pagination__button-active {
+  cursor: default;
+}
+
 .carousel-pagination__button-active::before,
 .carousel-pagination__button-active::after,
 .carousel-pagination__button-active:hover::before,
 .carousel-pagination__button-active:hover::after {
+  cursor: default;
   background-color: #BB945F;
 }
 
