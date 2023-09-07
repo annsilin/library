@@ -74,5 +74,8 @@ const buyBtnHandler = () => {
     localStorage.setItem('users', JSON.stringify(users));
     // Replace Buy button with Own button
     event.target.outerHTML = `<button class="button-own" disabled>Own</button>`;
+    // Update info in profile modal and reader's card
+    changeReadersCard(currentUser);
+    updateProfileModal(currentUser);
   }
 }
