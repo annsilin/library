@@ -86,7 +86,7 @@ const showArrows = (show) => {
 const updateUIForScreenWidth = () => {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth < 964) {
+  if (screenWidth < 694) {
     // Since the photos start scaling at this resolution we need to get the new width
     let photoWidth = document.querySelector(".carousel__photo").offsetWidth;
     // In order to update carousel wrapper accordingly
