@@ -30,6 +30,13 @@ profileBtns.forEach(button => {
     e.stopPropagation();
     closeModal(modals);
     openModal(modalProfile);
+
+    // Decrease name font size if necessary
+    adjustFontSizeToFitParent(document.querySelector(".modal-profile__user-name"),
+      document.querySelector(".modal-profile__user-name-first"), 8, 20);
+    adjustFontSizeToFitParent(document.querySelector(".modal-profile__user-name"),
+      document.querySelector(".modal-profile__user-name-last"), 8, 20);
+
   });
 });
 

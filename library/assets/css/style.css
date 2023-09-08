@@ -1262,6 +1262,7 @@ html {
 }
 
 .modal-profile__user-name {
+  max-width: 164px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1339,7 +1340,7 @@ html {
 .modal-profile__info-books {
   width: 352px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   overflow: auto;
   white-space: nowrap;
 }

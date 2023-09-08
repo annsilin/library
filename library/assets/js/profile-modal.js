@@ -1,4 +1,5 @@
 const updateProfileModal = (user) => {
+  // Update user credentials
   document.querySelector(".modal-profile__user-pic").innerText = Array.from(user.firstName)[0].toUpperCase() +
     Array.from(user.lastName)[0].toUpperCase();
   document.querySelector(".modal-profile__user-name-first").innerText = user.firstName;
@@ -7,6 +8,7 @@ const updateProfileModal = (user) => {
   document.querySelector(".modal-profile__info-card-books").innerText = user.books.length;
   document.querySelector(".modal-profile__info-library-card-number").innerText = user.cardNumber;
 
+  // Generate list of purchased books
   let booksUl = document.querySelector(".modal-profile__info-books-list");
   for (let bookID of user.books) {
     let foundBook = books.find(book => book.id === bookID);
