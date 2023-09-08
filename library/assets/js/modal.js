@@ -63,6 +63,9 @@ const closeModal = (modals) => {
     if (modal === modalSignUp) {
       clearSignUpForm();
     }
+    if (modal === modalBuyCard) {
+      clearBuyCardForm();
+    }
   });
   overlay.classList.add("hidden");
 }

@@ -9,12 +9,12 @@ const postalCodeInput = document.getElementById("postal-code");
 const cityInput = document.getElementById("city-town");
 let submitBtn = buyCardForm.querySelector('button[type="submit"]');
 
-const inputs = [creditCardNumberInput, expirationDateMonthInput, expirationDateYearInput, cvcInput, cardholderNameInput, postalCodeInput, cityInput];
+const buyCardInputs = [creditCardNumberInput, expirationDateMonthInput, expirationDateYearInput, cvcInput, cardholderNameInput, postalCodeInput, cityInput];
 
 /* If all input fields aren't empty -> make Buy button working */
-inputs.forEach(input => {
+buyCardInputs.forEach(input => {
   input.addEventListener('input', () => {
-    submitBtn.disabled = !allFieldsFilled(inputs);
+    submitBtn.disabled = !allFieldsFilled(buyCardInputs);
   })
 });
 
@@ -54,24 +54,30 @@ const validateCreditCard = (creditCardNumber, expirationDateMonth, expirationDat
     validInput(creditCardNumberInput);
   }
 
+  if (!expirationDateYear) {
+    showError(expirationDate, "Expiration year is required");
+    valid = false;
+  } else if (hasLetters(expirationDateYear)) {
+    showError(expirationDate, "Expiration year should only contain digits");
+    valid = false;
+  } else if (expirationDateYear.length !== 2 || expirationDateMonth.length !== 2) {
+    showError(expirationDate, "Each field should contain exactly 2 digits");
+    valid = false;
+  } else {
+    validInput(expirationDate);
+  }
+
   if (!expirationDateMonth) {
     showError(expirationDate, "Expiration month is required");
     valid = false;
   } else if (hasLetters(expirationDateMonth)) {
     showError(expirationDate, "Expiration month should only contain digits");
     valid = false;
+  } else if (expirationDateMonth.length !== 2 || expirationDateYear.length !== 2) {
+    showError(expirationDate, "Each field should contain exactly 2 digits");
+    valid = false;
   } else if (!(Number(expirationDateMonth) >= 1 && Number(expirationDateMonth) <= 12)) {
-    showError(expirationDate, "Expiration month should be in range of 1 to 12");
-    valid = false;
-  } else {
-    validInput(expirationDate);
-  }
-
-  if (!expirationDateYear) {
-    showError(expirationDate, "Expiration year is required");
-    valid = false;
-  } else if (hasLetters(expirationDateYear)) {
-    showError(expirationDate, "Expiration year should only contain digits");
+    showError(expirationDate, "Expiration month should be in range of 01 to 12");
     valid = false;
   } else {
     validInput(expirationDate);
@@ -125,4 +131,15 @@ const allFieldsFilled = (inputs) => {
   return inputs.every(input => input.value.length !== 0);
 }
 
+const clearBuyCardForm = () => {
+  buyCardInputs.forEach(input => {
+    input.value = "";
+  })
 
+  validInput(expirationDate);
+  validInput(creditCardNumberInput);
+  validInput(cvcInput);
+  validInput(cardholderNameInput);
+  validInput(postalCodeInput);
+  validInput(cityInput);
+};

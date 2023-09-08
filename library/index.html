@@ -484,7 +484,7 @@
     <form class="modal-form" id="buy-card-form">
       <div class="input-field">
         <label for="bank-card-number">Bank card number</label>
-        <input type="text" id="bank-card-number" name="bank-card-number">
+        <input type="text" id="bank-card-number" name="bank-card-number" oninput="this.value = this.value.replace(/[^0-9\s]/g, '')">
         <small class="validation"></small>
       </div>
 
@@ -492,15 +492,15 @@
         <label for="expiration-date-month">Expiration code</label>
         <label for="expiration-date-year"></label>
         <div class="expiration-date">
-          <input type="text" id="expiration-date-month" name="expiration-date-month" maxlength="2">
-          <input type="text" id="expiration-date-year" name="expiration-date-year" maxlength="2">
+          <input type="text" id="expiration-date-month" name="expiration-date-month" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+          <input type="text" id="expiration-date-year" name="expiration-date-year" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
         </div>
         <small class="validation"></small>
       </div>
 
       <div class="input-field">
         <label for="bank-card-cvc">CVC</label>
-        <input type="text" id="bank-card-cvc" name="bank-card-cvc" maxlength="3">
+        <input type="text" id="bank-card-cvc" name="bank-card-cvc" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
         <small class="validation"></small>
       </div>
 
