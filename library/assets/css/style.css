@@ -344,6 +344,10 @@ html {
   background-color: #BB945F;
 }
 
+.section-favorites {
+  height: 1400px;
+}
+
 .section-favorites__description {
   margin-bottom: 32px;
   color: #000;
@@ -364,6 +368,10 @@ html {
 }
 
 @media (max-width: 1200px) {
+  .section-favorites {
+    height: 2630px;
+  }
+
   .favorites-menu {
     background-color: #FFFFFF;
     top: 0;

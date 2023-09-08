@@ -48,6 +48,14 @@ const openModal = (modal) => {
 
 /* Helper function to close modal */
 const closeModal = (modals) => {
-  modals.forEach(modal => {modal.classList.add("hidden")});
+  modals.forEach(modal => {
+    modal.classList.add("hidden")
+    if (modal === modalSignIn) {
+      clearSignInForm();
+    }
+    if (modal === modalSignUp) {
+      clearSignUpForm();
+    }
+  });
   overlay.classList.add("hidden");
 }

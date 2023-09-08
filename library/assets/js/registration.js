@@ -198,3 +198,21 @@ const logoutAllUsers = (users) => {
   });
   localStorage.setItem('users', JSON.stringify(users));
 };
+
+const clearSignUpForm = () => {
+  firstNameInput.value = "";
+  lastNameInput.value = "";
+  emailInput.value = "";
+  passwordInput.value = "";
+  validInput(firstNameInput);
+  validInput(lastNameInput);
+  validInput(emailInput);
+  validInput(passwordInput);
+}
+
+const clearSignInForm = () => {
+  loginUsernameInput.value = "";
+  loginPasswordInput.value = "";
+  validInput(loginUsernameInput);
+  validInput(loginPasswordInput);
+}

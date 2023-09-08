@@ -1,65 +1,4 @@
-const elements = {
-  "header": {
-    "min": 1,
-    "max": Infinity,
-    "present": 1,
-    "in range": "✅"
-  },
-  "main": {
-    "min": 1,
-    "max": Infinity,
-    "present": 1,
-    "in range": "✅"
-  },
-  "footer": {
-    "min": 1,
-    "max": Infinity,
-    "present": 1,
-    "in range": "✅"
-  },
-  "section": {
-    "min": 6,
-    "max": Infinity,
-    "present": 6,
-    "in range": "✅"
-  },
-  "h1": {
-    "min": 1,
-    "max": 1,
-    "present": 1,
-    "in range": "✅"
-  },
-  "h2": {
-    "min": 5,
-    "max": Infinity,
-    "present": 5,
-    "in range": "✅"
-  },
-  "nav": {
-    "min": 1,
-    "max": Infinity,
-    "present": 1,
-    "in range": "✅"
-  },
-  "ul:has(li>a)": {
-    "min": 2,
-    "max": Infinity,
-    "present": 2,
-    "in range": "✅"
-  },
-  "button": {
-    "min": 7,
-    "max": Infinity,
-    "present": 19,
-    "in range": "✅"
-  },
-  "input": {
-    "min": 2,
-    "max": Infinity,
-    "present": 6,
-    "in range": "✅"
-  }
-}
+
 
 console.log(
   "\x1B[1m1. Верстка валидная (10/10)\x1B[m \n " +
@@ -73,7 +12,6 @@ console.log(
   "\t2.7 семь кнопок button (2/2) \n" +
   "\t2.8 два инпута input (2/2) \n" +
   "\x1B[1mКоличество вышеперечисленных элементов на странице:\x1B[m \n");
-console.table(elements);
 console.log(
   "\x1B[1m3. Верстка соответствует макету (54/54)\x1B[m: \n" +
   "\t3.1 блок header (расстояние между элементами 30px, работают как якоря, интерактивны, заголовок h1, расстояние до иконки 40px) (8/8)\n" +
