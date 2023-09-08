@@ -238,11 +238,10 @@
             <div class="card-input-wrapper">
               <span class="card-name">Brooklyn Public Library</span>
               <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
-                                               placeholder="Reader&#39;s name" required
-                                               pattern="^[a-zA-Z0-9\-\s]+$"></label>
+                                               placeholder="Reader&#39;s name" required></label>
               <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
-                                              placeholder="Card number" required pattern="^[a-zA-Z0-9\-\s]+$"
-                                              maxlength="9"></label>
+                                              placeholder="Card number" required pattern="^[a-zA-Z0-9]+$"
+                                              maxlength="9" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')"></label>
             </div>
             <button class="button-card button" type="submit">Check the card</button>
           </form>

@@ -10,6 +10,7 @@ const updateProfileModal = (user) => {
 
   // Generate list of purchased books
   let booksUl = document.querySelector(".modal-profile__info-books-list");
+  booksUl.innerHTML = ''; // Clear the list to avoid duplicates when buying a book
   for (let bookID of user.books) {
     let foundBook = books.find(book => book.id === bookID);
     let bookLi = document.createElement('li');
