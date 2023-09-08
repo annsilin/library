@@ -159,7 +159,7 @@ const validInput = (field) => {
 
 /* Check that email is entered correctly */
 const isValidEmail = (email) => {
-  const reg = /^[\w-.]+@([\w-]+\.)+[\w-]{1,4}$/g;
+  const reg = /^[\w-.]+@([\w-]+\.)+[a-zA-Z]{2,}$/g;
   return reg.test(String(email));
 }
 
