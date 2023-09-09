@@ -31,7 +31,7 @@ buyCardForm.addEventListener("submit", (e) => {
   if (validateCreditCard(creditCardNumber, expirationDateMonth, expirationDateYear, cvc, cardholderName, postalCode,
     city)) {
     currentUser.cardPurchased = true;
-    localStorage.setItem('users', JSON.stringify(users));
+    localStorage.setItem('users-annsilin', JSON.stringify(users));
     closeModal([modalBuyCard]);
   }
 });

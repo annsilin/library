@@ -47,7 +47,7 @@ loginForm.addEventListener("submit", (e) => {
     logoutAllUsers(users);
     foundUser.isLoggedIn = true;
     foundUser.visits += 1;
-    localStorage.setItem('users', JSON.stringify(users));
+    localStorage.setItem('users-annsilin', JSON.stringify(users));
     closeModal([modalSignIn]);
     location.reload();
   }
@@ -57,7 +57,7 @@ logoutBtns.forEach(logoutBtn =>
   logoutBtn.addEventListener("click", (e) => {
     if (currentUser) {
       currentUser.isLoggedIn = false;
-      localStorage.setItem('users', JSON.stringify(users));
+      localStorage.setItem('users-annsilin', JSON.stringify(users));
       location.reload();
     }
   })
@@ -198,7 +198,7 @@ const assignCardNumber = (users) => {
 /* Add new user to local storage */
 const addUserToLocalStorage = (newUser) => {
   users.push(newUser);
-  localStorage.setItem('users', JSON.stringify(users));
+  localStorage.setItem('users-annsilin', JSON.stringify(users));
 }
 
 /* Logout all users in local storage */
@@ -206,7 +206,7 @@ const logoutAllUsers = (users) => {
   users.forEach(user => {
     user.isLoggedIn = false;
   });
-  localStorage.setItem('users', JSON.stringify(users));
+  localStorage.setItem('users-annsilin', JSON.stringify(users));
 };
 
 const passwordVisibility = (passwordInput) => {

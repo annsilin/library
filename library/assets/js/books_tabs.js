@@ -71,7 +71,7 @@ const buyBtnHandler = () => {
     let purchasedBook = event.target.id.split('-')[1];
     // Push this book to user's purchased books array
     currentUser.books.push(Number(purchasedBook));
-    localStorage.setItem('users', JSON.stringify(users));
+    localStorage.setItem('users-annsilin', JSON.stringify(users));
     // Replace Buy button with Own button
     event.target.outerHTML = `<button class="button-own" disabled>Own</button>`;
     // Update info in profile modal and reader's card
