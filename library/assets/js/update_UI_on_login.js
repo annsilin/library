@@ -13,6 +13,7 @@ const updateUI = () => {
   // Display Reader's card with user's info
   cardWrapper.classList.toggle('switch');
   changeReadersCard(currentUser);
+  document.querySelector(".card-subtitle").innerText = "Your Library card";
 };
 
 addEventListener("DOMContentLoaded", () => {

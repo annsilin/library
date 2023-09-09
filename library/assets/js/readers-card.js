@@ -17,6 +17,7 @@ cardForm.addEventListener("submit", (e) => {
         cardWrapper.classList.toggle('switch');
         nameInput.value = "";
         cardNumberInput.value = "";
+        document.querySelector(".card-subtitle").innerText = "Find your Library card";
       }, 10000);
 
     }
@@ -29,4 +30,5 @@ const changeReadersCard = (user) => {
   document.querySelector(".card-input.filled.card").innerText = user.cardNumber;
   document.querySelector(".library-card-visits").innerText = user.visits;
   document.querySelector(".library-card-books").innerText = user.books.length;
+  document.querySelector(".card-subtitle").innerText = "Your Library card";
 }
