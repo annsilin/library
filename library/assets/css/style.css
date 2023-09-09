@@ -1691,3 +1691,21 @@ label[for=expiration-date-year] {
   text-transform: uppercase;
 }
 
+.input-field.password {
+  position: relative;
+}
+
+.btn-eye {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 3px;
+  top: 30px;
+  cursor: pointer;
+}
+
+#password-register, #password-login {
+  padding-right: 24px;
+}

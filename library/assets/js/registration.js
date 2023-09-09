@@ -7,6 +7,8 @@ const loginForm = document.getElementById("login-form");
 const loginUsernameInput = document.getElementById("email-login");
 const loginPasswordInput = document.getElementById("password-login");
 const logoutBtns = document.querySelectorAll(".log-out");
+const btnEyeSignUp = document.getElementById("password-register-visibility");
+const btnEyeSignIn = document.getElementById("password-login-visibility");
 
 registrationForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -60,6 +62,14 @@ logoutBtns.forEach(logoutBtn =>
     }
   })
 );
+
+btnEyeSignUp.addEventListener("click", () => {
+  passwordVisibility(passwordInput);
+});
+
+btnEyeSignIn.addEventListener("click", () => {
+  passwordVisibility(loginPasswordInput);
+});
 
 /* Validate user inputs upon entering login credentials */
 const validateLogin = (username, password, users) => {
@@ -199,6 +209,13 @@ const logoutAllUsers = (users) => {
   localStorage.setItem('users', JSON.stringify(users));
 };
 
+const passwordVisibility = (passwordInput) => {
+  passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+  let icons = passwordInput.nextElementSibling;
+  icons.querySelector(".icon-eye").style.display = passwordInput.type === "password" ? 'block' : 'none';
+  icons.querySelector(".icon-eye-slash").style.display = passwordInput.type === "password" ? 'none' : 'block';
+}
+
 const clearSignUpForm = () => {
   firstNameInput.value = "";
   lastNameInput.value = "";
@@ -208,6 +225,9 @@ const clearSignUpForm = () => {
   validInput(lastNameInput);
   validInput(emailInput);
   validInput(passwordInput);
+  if (passwordInput.type === "text") {
+    passwordVisibility(passwordInput);
+  }
 }
 
 const clearSignInForm = () => {
@@ -215,4 +235,7 @@ const clearSignInForm = () => {
   loginPasswordInput.value = "";
   validInput(loginUsernameInput);
   validInput(loginPasswordInput);
+  if (loginPasswordInput.type === "text") {
+    passwordVisibility(loginPasswordInput);
+  }
 }
