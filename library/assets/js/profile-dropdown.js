@@ -1,6 +1,7 @@
 const profileBtn = document.querySelector(".btn-profile");
 let profileMenu = document.getElementById("drop-menu-profile-no-auth");
 let profileCardNumber = document.getElementById("drop-menu-profile-card-number");
+const profileMenuLinks = [...document.querySelectorAll(".drop-menu-profile-btn")];
 
 if (currentUser) {
   profileMenu = document.getElementById("drop-menu-profile-auth");
@@ -15,7 +16,7 @@ profileBtn.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (!profileMenu.contains(e.target) && !profileBtn.contains(e.target)) {
+  if (!profileMenu.contains(e.target) && !profileBtn.contains(e.target) || profileMenuLinks.includes(e.target)) {
     profileMenu.classList.remove("drop-menu-profile-active");
   }
 }, { capture: true });
