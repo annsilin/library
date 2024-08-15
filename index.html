@@ -1,556 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brooklyn Public Library</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link href="assets/css/normalize.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Public Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 </head>
 <body>
 
 <header class="main-header">
-  <h1 class="main-header__title">Brooklyn Public Library</h1>
-  <nav class="navigation" id="navigation">
-    <ul class="navigation__links" id="navigation__links">
-      <li><a class="navigation__item" href="#about">About</a></li>
-      <li><a class="navigation__item" href="#favorites">Favorites</a></li>
-      <li><a class="navigation__item" href="#coffee">Coffee shop</a></li>
-      <li><a class="navigation__item" href="#contacts">Contacts</a></li>
-      <li><a class="navigation__item" href="#library-card">Library Card</a></li>
-    </ul>
-  </nav>
+    <h1 class="main-header__title">Brooklyn Public Library</h1>
+    <nav class="navigation" id="navigation">
+        <ul class="navigation__links" id="navigation__links">
+            <li><a class="navigation__item" href="#about">About</a></li>
+            <li><a class="navigation__item" href="#favorites">Favorites</a></li>
+            <li><a class="navigation__item" href="#coffee">Coffee shop</a></li>
+            <li><a class="navigation__item" href="#contacts">Contacts</a></li>
+            <li><a class="navigation__item" href="#library-card">Library Card</a></li>
+        </ul>
+    </nav>
 
-  <div class="navigation-icons" id="navigation-icons">
-    <button class="btn-profile">
-      <svg class="profile-icon icon-link" width="28px" height="28px">
-        <use href="assets/svg/icons.svg#icon-profile"></use>
-      </svg>
-    </button>
+    <div class="navigation-icons" id="navigation-icons">
+        <button class="btn-profile">
+            <svg class="profile-icon icon-link" width="28px" height="28px">
+                <use href="assets/svg/icons.svg#icon-profile"></use>
+            </svg>
+        </button>
 
-    <div class="drop-menu-profile drop-menu-profile-no-auth" id="drop-menu-profile-no-auth">
-      <span class="drop-menu-profile-card-number">Profile</span>
-      <span class="drop-menu-profile-line"></span>
-      <button class="drop-menu-profile-btn drop-menu-profile-login-btn log-in">Log In</button>
-      <button class="drop-menu-profile-btn drop-menu-profile-register-btn sign-up">Register</button>
+        <div class="drop-menu-profile drop-menu-profile-no-auth" id="drop-menu-profile-no-auth">
+            <span class="drop-menu-profile-card-number">Profile</span>
+            <span class="drop-menu-profile-line"></span>
+            <button class="drop-menu-profile-btn drop-menu-profile-login-btn log-in">Log In</button>
+            <button class="drop-menu-profile-btn drop-menu-profile-register-btn sign-up">Register</button>
+        </div>
+
+        <div class="drop-menu-profile drop-menu-profile-auth" id="drop-menu-profile-auth">
+            <span class="drop-menu-profile-card-number" id="drop-menu-profile-card-number">Profile</span>
+            <span class="drop-menu-profile-line"></span>
+            <button class="drop-menu-profile-btn drop-menu-profile-myprofile-btn my-profile">My profile</button>
+            <button class="drop-menu-profile-btn drop-menu-profile-logout-btn log-out">Log Out</button>
+        </div>
+
+        <div class="burger-button" id="burger-button">
+            <div class="burger-button__bar"></div>
+            <div class="burger-button__bar"></div>
+            <div class="burger-button__bar"></div>
+        </div>
     </div>
-
-    <div class="drop-menu-profile drop-menu-profile-auth" id="drop-menu-profile-auth">
-      <span class="drop-menu-profile-card-number" id="drop-menu-profile-card-number">Profile</span>
-      <span class="drop-menu-profile-line"></span>
-      <button class="drop-menu-profile-btn drop-menu-profile-myprofile-btn my-profile">My profile</button>
-      <button class="drop-menu-profile-btn drop-menu-profile-logout-btn log-out">Log Out</button>
-    </div>
-
-    <div class="burger-button" id="burger-button">
-      <div class="burger-button__bar"></div>
-      <div class="burger-button__bar"></div>
-      <div class="burger-button__bar"></div>
-    </div>
-  </div>
 </header>
 
 <main>
-  <section class="section-welcome">
-    <h2 class="section-welcome__title">Welcome&nbsp;<br>to the Brooklyn<br>Library </h2>
-  </section>
+    <section class="section-welcome">
+        <h2 class="section-welcome__title">Welcome&nbsp;<br>to the Brooklyn<br>Library </h2>
+    </section>
 
-  <section class="section section-about" id="about">
-    <h2 class="section__title">About</h2>
-    <hr class="section__title-underline">
-    <p class="section__description">The Brooklyn Library is a free workspace&#44; a large number of books and a cozy
-      coffee
-      shop inside </p>
-    <div class="carousel-arrows-wrapper">
-      <button class="carousel-arrow left">
-        <svg class="carousel-arrow-icon left" width="24px" height="24px">
-          <use href="assets/svg/icons.svg#icon-left-arrow"></use>
-        </svg>
-      </button>
-      <div class="carousel-visible">
-        <div class="carousel">
-          <img class="carousel__photo" src="assets/img/about-img/image1.png" alt="Woman in the library">
-          <img class="carousel__photo" src="assets/img/about-img/image2.png" alt="Stone bust sculptures">
-          <img class="carousel__photo" src="assets/img/about-img/image3.png" alt="Library">
-          <img class="carousel__photo" src="assets/img/about-img/image4.png" alt="Library">
-          <img class="carousel__photo" src="assets/img/about-img/image5.png" alt="Arc with columns">
+    <section class="section section-about" id="about">
+        <h2 class="section__title">About</h2>
+        <hr class="section__title-underline">
+        <p class="section__description">The Brooklyn Library is a free workspace&#44; a large number of books and a cozy
+            coffee
+            shop inside </p>
+        <div class="carousel-arrows-wrapper">
+            <button class="carousel-arrow left">
+                <svg class="carousel-arrow-icon left" width="24px" height="24px">
+                    <use href="assets/svg/icons.svg#icon-left-arrow"></use>
+                </svg>
+            </button>
+            <div class="carousel-visible">
+                <div class="carousel">
+                    <img class="carousel__photo" src="assets/img/about-img/image1.png" alt="Woman in the library">
+                    <img class="carousel__photo" src="assets/img/about-img/image2.png" alt="Stone bust sculptures">
+                    <img class="carousel__photo" src="assets/img/about-img/image3.png" alt="Library">
+                    <img class="carousel__photo" src="assets/img/about-img/image4.png" alt="Library">
+                    <img class="carousel__photo" src="assets/img/about-img/image5.png" alt="Arc with columns">
+                </div>
+            </div>
+            <button class="carousel-arrow right">
+                <svg class="carousel-arrow-icon right" width="24px" height="24px">
+                    <use href="assets/svg/icons.svg#icon-right-arrow"></use>
+                </svg>
+            </button>
         </div>
-      </div>
-      <button class="carousel-arrow right">
-        <svg class="carousel-arrow-icon right" width="24px" height="24px">
-          <use href="assets/svg/icons.svg#icon-right-arrow"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="carousel-pagination">
-      <div class="carousel-pagination__button carousel-pagination__button-active"></div>
-      <div class="carousel-pagination__button"></div>
-      <div class="carousel-pagination__button"></div>
-      <div class="carousel-pagination__button"></div>
-      <div class="carousel-pagination__button"></div>
-    </div>
-  </section>
+        <div class="carousel-pagination">
+            <div class="carousel-pagination__button carousel-pagination__button-active"></div>
+            <div class="carousel-pagination__button"></div>
+            <div class="carousel-pagination__button"></div>
+            <div class="carousel-pagination__button"></div>
+            <div class="carousel-pagination__button"></div>
+        </div>
+    </section>
 
-  <section class="section section-favorites" id="favorites">
-    <h2 class="section__title">Favorites</h2>
-    <hr class="section__title-underline">
-    <p class="section-favorites__description">Pick favorites of season</p>
-    <div class="favorites-menu">
-      <input class="favorites-menu__item" type="radio" id="winter" name="fav-season" value="winter" checked>
-      <label class="favorites-menu__item-label" for="winter">Winter</label>
+    <section class="section section-favorites" id="favorites">
+        <h2 class="section__title">Favorites</h2>
+        <hr class="section__title-underline">
+        <p class="section-favorites__description">Pick favorites of season</p>
+        <div class="favorites-menu">
+            <input class="favorites-menu__item" type="radio" id="winter" name="fav-season" value="winter" checked>
+            <label class="favorites-menu__item-label" for="winter">Winter</label>
 
-      <input class="favorites-menu__item" type="radio" id="spring" name="fav-season" value="spring">
-      <label class="favorites-menu__item-label" for="spring">Spring</label>
+            <input class="favorites-menu__item" type="radio" id="spring" name="fav-season" value="spring">
+            <label class="favorites-menu__item-label" for="spring">Spring</label>
 
-      <input class="favorites-menu__item" type="radio" id="summer" name="fav-season" value="summer">
-      <label class="favorites-menu__item-label" for="summer">Summer</label>
+            <input class="favorites-menu__item" type="radio" id="summer" name="fav-season" value="summer">
+            <label class="favorites-menu__item-label" for="summer">Summer</label>
 
-      <input class="favorites-menu__item" type="radio" id="autumn" name="fav-season" value="autumn">
-      <label class="favorites-menu__item-label" for="autumn">Autumn</label>
-    </div>
+            <input class="favorites-menu__item" type="radio" id="autumn" name="fav-season" value="autumn">
+            <label class="favorites-menu__item-label" for="autumn">Autumn</label>
+        </div>
 
-    <div class="books books-1"></div>
+        <div class="books books-1"></div>
 
-    <div class="books books-2"></div>
+        <div class="books books-2"></div>
 
-    <div class="books books-3"></div>
+        <div class="books books-3"></div>
 
-    <div class="books books-4"></div>
+        <div class="books books-4"></div>
 
-  </section>
+    </section>
 
-  <section class="section section-coffee" id="coffee">
-    <h2 class="section__title">Coffee Shop</h2>
-    <hr class="section__title-underline">
-    <p class="section__description">In our library, we have of cozy coffee shop, welcoming in customers with frothy
-      cappuccinos and friendly conversation.&nbsp;
-      You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try
-      desserts from bakery.</p>
-    <div class="coffee-shop-menu-wrapper">
-      <div class="coffee-shop-menu">
-        <h3 class="coffee-shop-menu__title">Coffee &#38; Tea</h3>
-        <ul class="coffee-shop-menu-list">
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">Cold Brew Coffee</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;3</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">French Press Pot</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;5</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">Espresso</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;2</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">Cappuccino</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;4</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">Hot Tea</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;2</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-drink">Cold Tea</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;2</span>
-          </li>
-        </ul>
-      </div>
+    <section class="section section-coffee" id="coffee">
+        <h2 class="section__title">Coffee Shop</h2>
+        <hr class="section__title-underline">
+        <p class="section__description">In our library, we have a cozy coffee shop welcoming customers with frothy
+            cappuccinos and friendly conversation. You can get your favorite book and read it in the coffee shop. Our
+            barista will make you the best coffee, and you can also try desserts from our bakery.</p>
+        <div class="coffee-shop-menu-wrapper">
+            <div class="coffee-shop-menu">
+                <h3 class="coffee-shop-menu__title">Coffee &#38; Tea</h3>
+                <ul class="coffee-shop-menu-list">
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">Cold Brew Coffee</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;3</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">French Press Pot</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;5</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">Espresso</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;2</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">Cappuccino</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;4</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">Hot Tea</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;2</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-drink">Cold Tea</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;2</span>
+                    </li>
+                </ul>
+            </div>
 
-      <div class="coffee-shop-menu coffee-shop-menu-desserts">
-        <h3 class="coffee-shop-menu__title">Desserts &#38; Cakes</h3>
-        <ul class="coffee-shop-menu-list">
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Forest Gateau</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;16</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Blue Moon</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;16</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Truffle Cake</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;15</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Chocolate Cake</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;18</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Poet&#39;s Dream Cake</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;16</span>
-          </li>
-          <li class="coffee-shop-menu-list__item">
-            <span class="menu-item-title-dessert">Pineapple Cake</span>
-            <span class="menu-item-line"></span>
-            <span class="menu-item-price">&#36;14</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+            <div class="coffee-shop-menu coffee-shop-menu-desserts">
+                <h3 class="coffee-shop-menu__title">Desserts &#38; Cakes</h3>
+                <ul class="coffee-shop-menu-list">
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Forest Gateau</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;16</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Blue Moon</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;16</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Truffle Cake</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;15</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Chocolate Cake</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;18</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Poet&#39;s Dream Cake</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;16</span>
+                    </li>
+                    <li class="coffee-shop-menu-list__item">
+                        <span class="menu-item-title-dessert">Pineapple Cake</span>
+                        <span class="menu-item-line"></span>
+                        <span class="menu-item-price">&#36;14</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <section class="section section-contacts" id="contacts">
-    <h2 class="section__title">Our Contacts</h2>
-    <hr class="section__title-underline">
-    <div class="section-contacts-wrapper">
-      <div class="section-contacts__contacts-info">
-        <span class="section-contacts__subtitle">For all Library inquiries:</span>
-        <p class="section-contacts__contact">Please call
-          <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2370</a></p>
-        <p class="section-contacts__contact">For TTY service, please call
-          <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2370</a></p>
-        <p class="section-contacts__contact">Putterham Library:
-          <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2385</a></p>
-        <span class="section-contacts__subtitle">Senior Staff</span>
-        <p class="section-contacts__contact">Library Director: <span class="section-contacts__contact-name">
+    <section class="section section-contacts" id="contacts">
+        <h2 class="section__title">Our Contacts</h2>
+        <hr class="section__title-underline">
+        <div class="section-contacts-wrapper">
+            <div class="section-contacts__contacts-info">
+                <span class="section-contacts__subtitle">For all Library inquiries:</span>
+                <p class="section-contacts__contact">Please call
+                    <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2370</a></p>
+                <p class="section-contacts__contact">For TTY service, please call
+                    <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2370</a></p>
+                <p class="section-contacts__contact">Putterham Library:
+                    <a class="section-contacts__contact-phone" href="tel:6177302370">(617) 730-2385</a></p>
+                <span class="section-contacts__subtitle">Senior Staff</span>
+                <p class="section-contacts__contact">Library Director: <span class="section-contacts__contact-name">
       <a class="section-contacts__contact-email" href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></span></p>
-      </div>
-      <img class="section-contacts__map" src="assets/img/map.png" alt="Map of library location">
-    </div>
-  </section>
-
-  <section class="section section-library-card" id="library-card">
-    <h2 class="section__title">Digital Library Cards</h2>
-    <hr class="section__title-underline">
-    <div class="cards-wrapper">
-      <div class="card-wrapper">
-        <h3 class="card-subtitle">Find your Library card</h3>
-
-        <div class="card-form-wrapper">
-
-          <form class="card-form" id="card-form">
-            <div class="card-input-wrapper">
-              <span class="card-name">Brooklyn Public Library</span>
-              <label for="readers-name"><input class="card-input" type="text" id="readers-name" name="readers-name"
-                                               placeholder="Reader&#39;s name" required></label>
-              <label for="card-number"><input class="card-input" type="text" id="card-number" name="card-number"
-                                              placeholder="Card number" required pattern="^[a-zA-Z0-9]+$"
-                                              maxlength="9" oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')"></label>
             </div>
-            <button class="button-card button" type="submit">Check the card</button>
-          </form>
-
-          <div class="card-form filled">
-            <div class="card-input-wrapper">
-              <span class="card-name">Brooklyn Public Library</span>
-              <span class="card-input filled name"></span>
-              <span class="card-input filled card"></span>
-            </div>
-            <div class="modal-profile__info-cards">
-              <div class="modal-profile__info-card">
-                <span class="modal-profile__info-card-title">Visits</span>
-                <svg class="" width="20px" height="21px">
-                  <use href="assets/svg/icons.svg#icon-visits"></use>
-                </svg>
-                <span class="modal-profile__info-card-counter library-card-visits">0</span>
-              </div>
-              <div class="modal-profile__info-card">
-                <span class="modal-profile__info-card-title">Bonuses</span>
-                <svg class="" width="20px" height="21px">
-                  <use href="assets/svg/icons.svg#icon-bonuses"></use>
-                </svg>
-                <span class="modal-profile__info-card-counter library-card-bonuses">1240</span>
-              </div>
-              <div class="modal-profile__info-card">
-                <span class="modal-profile__info-card-title">Books</span>
-                <svg class="" width="20px" height="21px">
-                  <use href="assets/svg/icons.svg#icon-books"></use>
-                </svg>
-                <span class="modal-profile__info-card-counter library-card-books">0</span>
-              </div>
-            </div>
-          </div>
-
+            <img class="section-contacts__map" src="assets/img/map.png" alt="Map of library location">
         </div>
-      </div>
+    </section>
 
-      <div class="get-card-wrapper">
-        <h3 class="get-card-subtitle">Get a reader card</h3>
-        <p class="get-card-description">You will be able to see a reader card after logging into account or you can
-          register a new account</p>
-        <div class="get-card-buttons-wrapper">
-          <button class="button sign-up">Sign Up</button>
-          <button class="button log-in">Log in</button>
+    <section class="section section-library-card" id="library-card">
+        <h2 class="section__title">Digital Library Cards</h2>
+        <hr class="section__title-underline">
+        <div class="cards-wrapper">
+            <div class="card-wrapper">
+                <h3 class="card-subtitle">Find your Library card</h3>
+
+                <div class="card-form-wrapper">
+
+                    <form class="card-form" id="card-form">
+                        <div class="card-input-wrapper">
+                            <span class="card-name">Brooklyn Public Library</span>
+                            <label for="readers-name"><input class="card-input" type="text" id="readers-name"
+                                                             name="readers-name"
+                                                             placeholder="Reader&#39;s name" required></label>
+                            <label for="card-number"><input class="card-input" type="text" id="card-number"
+                                                            name="card-number"
+                                                            placeholder="Card number" required pattern="^[a-zA-Z0-9]+$"
+                                                            maxlength="9"
+                                                            oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')"></label>
+                        </div>
+                        <button class="button-card button" type="submit">Check the card</button>
+                    </form>
+
+                    <div class="card-form filled">
+                        <div class="card-input-wrapper">
+                            <span class="card-name">Brooklyn Public Library</span>
+                            <span class="card-input filled name"></span>
+                            <span class="card-input filled card"></span>
+                        </div>
+                        <div class="modal-profile__info-cards">
+                            <div class="modal-profile__info-card">
+                                <span class="modal-profile__info-card-title">Visits</span>
+                                <svg class="" width="20px" height="21px">
+                                    <use href="assets/svg/icons.svg#icon-visits"></use>
+                                </svg>
+                                <span class="modal-profile__info-card-counter library-card-visits">0</span>
+                            </div>
+                            <div class="modal-profile__info-card">
+                                <span class="modal-profile__info-card-title">Bonuses</span>
+                                <svg class="" width="20px" height="21px">
+                                    <use href="assets/svg/icons.svg#icon-bonuses"></use>
+                                </svg>
+                                <span class="modal-profile__info-card-counter library-card-bonuses">1240</span>
+                            </div>
+                            <div class="modal-profile__info-card">
+                                <span class="modal-profile__info-card-title">Books</span>
+                                <svg class="" width="20px" height="21px">
+                                    <use href="assets/svg/icons.svg#icon-books"></use>
+                                </svg>
+                                <span class="modal-profile__info-card-counter library-card-books">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="get-card-wrapper">
+                <h3 class="get-card-subtitle">Get a reader card</h3>
+                <p class="get-card-description">You will be able to see a reader card after logging into your account,
+                    or you
+                    can
+                    register for a new account</p>
+                <div class="get-card-buttons-wrapper">
+                    <button class="button sign-up">Sign Up</button>
+                    <button class="button log-in">Log in</button>
+                </div>
+                <button class="button my-profile" id="profile-btn" style="display: none">Profile</button>
+            </div>
         </div>
-        <button class="button my-profile" id="profile-btn" style="display: none">Profile</button>
-      </div>
-    </div>
-  </section>
+    </section>
 </main>
 
 <footer class="footer-wrapper">
-  <div class="footer-contacts-wrapper">
-    <div class="footer-contacts">
-      <p class="address"><a class="footer-link" href="https://goo.gl/maps/89vQ8Y5qs4DkFxkM7" target="_blank">286
-        Cadman Plaza, New York,<br> NY 11238, United States</a></p>
-      <ul class="social">
-        <li>
-          <a class="footer-link" href="https://www.twitter.com/bklynlibrary" target="_blank">
-            <svg class="social-icon icon-link" width="24px" height="24px">
-              <use href="assets/svg/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="footer-link" href="https://www.instagram.com/bklynlibrary" target="_blank">
-            <svg class="social-icon icon-link" width="24px" height="24px">
-              <use href="assets/svg/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="footer-link" href="https://www.facebook.com/BrooklynPublicLibrary/" target="_blank">
-            <svg class="social-icon icon-link" width="24px" height="24px">
-              <use href="assets/svg/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <div class="footer-contacts-wrapper">
+        <div class="footer-contacts">
+            <p class="address"><a class="footer-link" href="https://goo.gl/maps/89vQ8Y5qs4DkFxkM7" target="_blank">286
+                Cadman Plaza, New York,<br> NY 11238, United States</a></p>
+            <ul class="social">
+                <li>
+                    <a class="footer-link" href="https://www.twitter.com/bklynlibrary" target="_blank">
+                        <svg class="social-icon icon-link" width="24px" height="24px">
+                            <use href="assets/svg/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="https://www.instagram.com/bklynlibrary" target="_blank">
+                        <svg class="social-icon icon-link" width="24px" height="24px">
+                            <use href="assets/svg/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="https://www.facebook.com/BrooklynPublicLibrary/" target="_blank">
+                        <svg class="social-icon icon-link" width="24px" height="24px">
+                            <use href="assets/svg/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-schedule">
+            <p class="schedule">Mon - Fri<br>
+                08&#58;00 am - 07&#58;00 pm</p>
+            <p class="schedule">Sat - Sun<br>
+                10&#58;00 am - 06&#58;00 pm</p>
+        </div>
     </div>
-    <div class="footer-schedule">
-      <p class="schedule">Mon - Fri<br>
-        08&#58;00 am - 07&#58;00 pm</p>
-      <p class="schedule">Sat - Sun<br>
-        10&#58;00 am - 06&#58;00 pm</p>
+    <hr class="footer-line">
+    <div class="footer-credits-wrapper">
+        <span class="credits-content credits-content-year">2023</span>
+        <span class="credits-content"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a></span>
+        <span class="credits-content credits-content-nickname"><a class="footer-link" href="https://github.com/annsilin"
+                                                                  target="_blank">annsilin</a></span>
     </div>
-  </div>
-  <hr class="footer-line">
-  <div class="footer-credits-wrapper">
-    <span class="credits-content credits-content-year">2023</span>
-    <span class="credits-content"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">The Rolling Scopes School</a></span>
-    <span class="credits-content credits-content-nickname"><a class="footer-link" href="https://github.com/annsilin"
-                                                              target="_blank">annsilin</a></span>
-  </div>
 </footer>
 
 <div class="overlay hidden"></div>
 
 <div class="modal-profile hidden">
-  <div class="modal-profile__user">
-    <div class="modal-profile__user-pic"></div>
-    <div class="modal-profile__user-name">
-      <span class="modal-profile__user-name-first"></span>
-      <span class="modal-profile__user-name-last"></span>
+    <div class="modal-profile__user">
+        <div class="modal-profile__user-pic"></div>
+        <div class="modal-profile__user-name">
+            <span class="modal-profile__user-name-first"></span>
+            <span class="modal-profile__user-name-last"></span>
+        </div>
     </div>
-  </div>
-  <div class="modal-profile__info">
-    <h2 class="modal-profile-title">My profile</h2>
-    <div class="modal-profile__info-cards">
-      <div class="modal-profile__info-card">
-        <span class="modal-profile__info-card-title">Visits</span>
-        <svg class="" width="20px" height="21px">
-          <use href="assets/svg/icons.svg#icon-visits"></use>
-        </svg>
-        <span class="modal-profile__info-card-counter modal-profile__info-card-visits">0</span>
-      </div>
-      <div class="modal-profile__info-card">
-        <span class="modal-profile__info-card-title">Bonuses</span>
-        <svg class="" width="20px" height="21px">
-          <use href="assets/svg/icons.svg#icon-bonuses"></use>
-        </svg>
-        <span class="modal-profile__info-card-counter modal-profile__info-card-bonuses">1240</span>
-      </div>
-      <div class="modal-profile__info-card">
-        <span class="modal-profile__info-card-title">Books</span>
-        <svg class="" width="20px" height="21px">
-          <use href="assets/svg/icons.svg#icon-books"></use>
-        </svg>
-        <span class="modal-profile__info-card-counter modal-profile__info-card-books">0</span>
-      </div>
+    <div class="modal-profile__info">
+        <h2 class="modal-profile-title">My profile</h2>
+        <div class="modal-profile__info-cards">
+            <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Visits</span>
+                <svg class="" width="20px" height="21px">
+                    <use href="assets/svg/icons.svg#icon-visits"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter modal-profile__info-card-visits">0</span>
+            </div>
+            <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Bonuses</span>
+                <svg class="" width="20px" height="21px">
+                    <use href="assets/svg/icons.svg#icon-bonuses"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter modal-profile__info-card-bonuses">1240</span>
+            </div>
+            <div class="modal-profile__info-card">
+                <span class="modal-profile__info-card-title">Books</span>
+                <svg class="" width="20px" height="21px">
+                    <use href="assets/svg/icons.svg#icon-books"></use>
+                </svg>
+                <span class="modal-profile__info-card-counter modal-profile__info-card-books">0</span>
+            </div>
+        </div>
+        <span class="modal-profile__info-books-title">Rented books</span>
+        <div class="modal-profile__info-books">
+            <ul class="modal-profile__info-books-list">
+            </ul>
+        </div>
+        <div class="modal-profile__info-library-card">
+            <span class="modal-profile__info-library-card-title">Card number</span>
+            <span class="modal-profile__info-library-card-number"></span>
+            <button class="btn-copy" onclick="copyToClipboard()">
+                <svg class="icon-copy" width="13.31px" height="12px">
+                    <use href="assets/svg/icons.svg#icon-copy"></use>
+                </svg>
+            </button>
+        </div>
     </div>
-    <span class="modal-profile__info-books-title">Rented books</span>
-    <div class="modal-profile__info-books">
-      <ul class="modal-profile__info-books-list">
-      </ul>
-    </div>
-    <div class="modal-profile__info-library-card">
-      <span class="modal-profile__info-library-card-title">Card number</span>
-      <span class="modal-profile__info-library-card-number"></span>
-      <button class="btn-copy" onclick="copyToClipboard()">
-        <svg class="icon-copy" width="13.31px" height="12px">
-          <use href="assets/svg/icons.svg#icon-copy"></use>
+    <button class="btn-close">
+        <svg class="icon-close" width="19px" height="19px">
+            <use href="assets/svg/icons.svg#icon-close"></use>
         </svg>
-      </button>
-    </div>
-  </div>
-  <button class="btn-close">
-    <svg class="icon-close" width="19px" height="19px">
-      <use href="assets/svg/icons.svg#icon-close"></use>
-    </svg>
-  </button>
+    </button>
 </div>
 
 <div class="modal-register-login modal-register hidden">
-  <h2 class="modal-register-login__title">Register</h2>
-  <button class="btn-close">
-    <svg class="icon-close" width="19px" height="19px">
-      <use href="assets/svg/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <form class="modal-form" id="registration-form">
-    <div class="input-field">
-      <label for="first-name">First name</label>
-      <input type="text" id="first-name" name="first-name">
-      <small class="validation"></small>
-    </div>
-
-    <div class="input-field">
-      <label for="last-name">Last name</label>
-      <input type="text" id="last-name" name="last-name">
-      <small class="validation"></small>
-    </div>
-
-    <div class="input-field">
-      <label for="email-register">E-mail</label>
-      <input type="text" id="email-register" name="email">
-      <small class="validation"></small>
-    </div>
-
-    <div class="input-field password">
-      <label for="password-register">Password</label>
-      <input type="password" id="password-register" name="password">
-      <button type="button" class="btn-eye" id="password-register-visibility">
-        <svg class="icon-eye" width="19px" height="19px">
-          <use href="assets/svg/icons.svg#icon-eye"></use>
+    <h2 class="modal-register-login__title">Register</h2>
+    <button class="btn-close">
+        <svg class="icon-close" width="19px" height="19px">
+            <use href="assets/svg/icons.svg#icon-close"></use>
         </svg>
-        <svg class="icon-eye-slash" width="19px" height="19px" style="display: none">
-          <use href="assets/svg/icons.svg#icon-eye-slash"></use>
-        </svg>
-      </button>
-      <small class="validation"></small>
+    </button>
+
+    <form class="modal-form" id="registration-form">
+        <div class="input-field">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name">
+            <small class="validation"></small>
+        </div>
+
+        <div class="input-field">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name">
+            <small class="validation"></small>
+        </div>
+
+        <div class="input-field">
+            <label for="email-register">E-mail</label>
+            <input type="text" id="email-register" name="email">
+            <small class="validation"></small>
+        </div>
+
+        <div class="input-field password">
+            <label for="password-register">Password</label>
+            <input type="password" id="password-register" name="password">
+            <button type="button" class="btn-eye" id="password-register-visibility">
+                <svg class="icon-eye" width="19px" height="19px">
+                    <use href="assets/svg/icons.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon-eye-slash" width="19px" height="19px" style="display: none">
+                    <use href="assets/svg/icons.svg#icon-eye-slash"></use>
+                </svg>
+            </button>
+            <small class="validation"></small>
+        </div>
+
+        <button type="submit" class="button">Sign Up</button>
+    </form>
+
+    <div class="modal-register-login-alt">
+        <span class="modal-register-login-alt__text">Already have an account?</span>
+        <button class="modal-register-login-alt__btn log-in">Login</button>
     </div>
-
-    <button type="submit" class="button">Sign Up</button>
-  </form>
-
-  <div class="modal-register-login-alt">
-    <span class="modal-register-login-alt__text">Already have an account?</span>
-    <button class="modal-register-login-alt__btn log-in">Login</button>
-  </div>
 
 </div>
 
 <div class="modal-register-login modal-login hidden">
-  <h2 class="modal-register-login__title">Login</h2>
-  <button class="btn-close">
-    <svg class="icon-close" width="19px" height="19px">
-      <use href="assets/svg/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <form class="modal-form" id="login-form">
-    <div class="input-field">
-      <label for="email-login">E-mail or readers card</label>
-      <input type="text" id="email-login" name="email">
-      <small class="validation"></small>
-    </div>
-
-    <div class="input-field password">
-      <label for="password-login">Password</label>
-      <input type="password" id="password-login" name="password">
-      <button type="button" class="btn-eye" id="password-login-visibility">
-        <svg class="icon-eye" width="19px" height="19px">
-          <use href="assets/svg/icons.svg#icon-eye"></use>
+    <h2 class="modal-register-login__title">Login</h2>
+    <button class="btn-close">
+        <svg class="icon-close" width="19px" height="19px">
+            <use href="assets/svg/icons.svg#icon-close"></use>
         </svg>
-        <svg class="icon-eye-slash" width="19px" height="19px" style="display: none">
-          <use href="assets/svg/icons.svg#icon-eye-slash"></use>
-        </svg>
-      </button>
-      <small class="validation"></small>
+    </button>
+
+    <form class="modal-form" id="login-form">
+        <div class="input-field">
+            <label for="email-login">E-mail or readers card</label>
+            <input type="text" id="email-login" name="email">
+            <small class="validation"></small>
+        </div>
+
+        <div class="input-field password">
+            <label for="password-login">Password</label>
+            <input type="password" id="password-login" name="password">
+            <button type="button" class="btn-eye" id="password-login-visibility">
+                <svg class="icon-eye" width="19px" height="19px">
+                    <use href="assets/svg/icons.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon-eye-slash" width="19px" height="19px" style="display: none">
+                    <use href="assets/svg/icons.svg#icon-eye-slash"></use>
+                </svg>
+            </button>
+            <small class="validation"></small>
+        </div>
+
+        <button type="submit" class="button">Log In</button>
+    </form>
+
+    <div class="modal-register-login-alt">
+        <span class="modal-register-login-alt__text">Don&#39;t have an account?</span>
+        <button class="modal-register-login-alt__btn sign-up">Register</button>
     </div>
-
-    <button type="submit" class="button">Log In</button>
-  </form>
-
-  <div class="modal-register-login-alt">
-    <span class="modal-register-login-alt__text">Don&#39;t have an account?</span>
-    <button class="modal-register-login-alt__btn sign-up">Register</button>
-  </div>
 </div>
 
 <div class="modal-buy-card hidden">
-  <div class="modal-buy-card__header">
-    <h2 class="modal-buy-card__header-title">Buy a library card</h2>
-    <button class="btn-close">
-      <svg class="icon-close" width="19px" height="19px">
-        <use href="assets/svg/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-  </div>
+    <div class="modal-buy-card__header">
+        <h2 class="modal-buy-card__header-title">Buy a library card</h2>
+        <button class="btn-close">
+            <svg class="icon-close" width="19px" height="19px">
+                <use href="assets/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
 
-  <div class="modal-buy-card__content-wrapper">
-    <form class="modal-form" id="buy-card-form">
-      <div class="input-field">
-        <label for="bank-card-number">Bank card number</label>
-        <input type="text" id="bank-card-number" name="bank-card-number" oninput="this.value = this.value.replace(/[^0-9\s]/g, '')">
-        <small class="validation"></small>
-      </div>
+    <div class="modal-buy-card__content-wrapper">
+        <form class="modal-form" id="buy-card-form">
+            <div class="input-field">
+                <label for="bank-card-number">Bank card number</label>
+                <input type="text" id="bank-card-number" name="bank-card-number"
+                       oninput="this.value = this.value.replace(/[^0-9\s]/g, '')">
+                <small class="validation"></small>
+            </div>
 
-      <div class="input-field">
-        <label for="expiration-date-month">Expiration code</label>
-        <label for="expiration-date-year"></label>
-        <div class="expiration-date">
-          <input type="text" id="expiration-date-month" name="expiration-date-month" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-          <input type="text" id="expiration-date-year" name="expiration-date-year" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-        </div>
-        <small class="validation"></small>
-      </div>
+            <div class="input-field">
+                <label for="expiration-date-month">Expiration code</label>
+                <label for="expiration-date-year"></label>
+                <div class="expiration-date">
+                    <input type="text" id="expiration-date-month" name="expiration-date-month" maxlength="2"
+                           oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <input type="text" id="expiration-date-year" name="expiration-date-year" maxlength="2"
+                           oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                </div>
+                <small class="validation"></small>
+            </div>
 
-      <div class="input-field">
-        <label for="bank-card-cvc">CVC</label>
-        <input type="text" id="bank-card-cvc" name="bank-card-cvc" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-        <small class="validation"></small>
-      </div>
+            <div class="input-field">
+                <label for="bank-card-cvc">CVC</label>
+                <input type="text" id="bank-card-cvc" name="bank-card-cvc" maxlength="3"
+                       oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                <small class="validation"></small>
+            </div>
 
-      <div class="input-field">
-        <label for="cardholder-name">Cardholder name</label>
-        <input type="text" id="cardholder-name" name="cardholder-name">
-        <small class="validation"></small>
-      </div>
+            <div class="input-field">
+                <label for="cardholder-name">Cardholder name</label>
+                <input type="text" id="cardholder-name" name="cardholder-name">
+                <small class="validation"></small>
+            </div>
 
-      <div class="input-field">
-        <label for="postal-code">Postal code</label>
-        <input type="text" id="postal-code" name="postal-code">
-        <small class="validation"></small>
-      </div>
+            <div class="input-field">
+                <label for="postal-code">Postal code</label>
+                <input type="text" id="postal-code" name="postal-code">
+                <small class="validation"></small>
+            </div>
 
-      <div class="input-field">
-        <label for="city-town">City &#47; Town</label>
-        <input type="text" id="city-town" name="city-town">
-        <small class="validation"></small>
-      </div>
+            <div class="input-field">
+                <label for="city-town">City &#47; Town</label>
+                <input type="text" id="city-town" name="city-town">
+                <small class="validation"></small>
+            </div>
 
-      <div class="modal-buy-card__purchase">
-        <button type="submit" class="button" disabled>Buy</button>
-        <span class="modal-buy-card__purchase-price">&#36; 25.00</span>
-      </div>
+            <div class="modal-buy-card__purchase">
+                <button type="submit" class="button" disabled>Buy</button>
+                <span class="modal-buy-card__purchase-price">&#36; 25.00</span>
+            </div>
 
-    </form>
+        </form>
 
-    <p class="modal-buy-card__description">
-      If you are live, work, attend school, or pay property taxes in New York State, you can get a &#36;25 digital
-      library
-      card right now using this online form. Visitors to New York State can also use this form to apply for a temporary
-      card.
-    </p>
-  </div>
+        <p class="modal-buy-card__description">
+            If you live, work, attend school, or pay property taxes in New York State, you can get a &#36;25 digital library
+            card right now using this online form. Visitors of New York State can also use this form to apply for a
+            temporary card.
+        </p>
+    </div>
 
 </div>
 
